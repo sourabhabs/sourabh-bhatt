@@ -1,2393 +1,2684 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PGDM in Human Resource Management | Asian Business School (ABS) Noida</title>
-<meta name="description" content="Pursue AICTE approved, NBA accredited 2-year PGDM in Human Resource Management at Asian Business School, Noida. Industry-aligned curriculum, global exposure, and 100% placement support.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --maroon: #9E0A0F;
-    --maroon-dark: #6B0407;
-    --maroon-light: #FCEAEA;
-    --gold: #C5A059;
-    --gold-dark: #A37E3B;
-    --gold-light: #F7EFE1;
-    --cream: #FAF7F2;
-    --ink: #1C1816;
-    --ink-soft: #5C5451;
-    --line: #E8DFD3;
-    --white: #ffffff;
-    --shadow-sm: 0 2px 8px rgba(107, 4, 7, 0.04);
-    --shadow-md: 0 8px 24px rgba(107, 4, 7, 0.06);
-    --shadow-lg: 0 16px 40px rgba(107, 4, 7, 0.1);
-    --font-heading: 'Playfair Display', Georgia, serif;
-    --font-body: 'Plus Jakarta Sans', sans-serif;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-family: var(--font-body);
-    color: var(--ink);
-    background: var(--cream);
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
-
-  h1, h2, h3, h4 {
-    font-family: var(--font-heading);
-    color: var(--maroon-dark);
-    font-weight: 700;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-    transition: var(--transition);
-  }
-
-  /* Utility Top Bar */
-  .top-bar {
-    background: #111;
-    color: #eee;
-    font-size: 11px;
-    font-weight: 500;
-    padding: 10px 40px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 16px;
-    letter-spacing: 0.5px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  .top-bar span {
-    opacity: 0.85;
-    transition: var(--transition);
-  }
-  .top-bar span:hover {
-    opacity: 1;
-    color: var(--gold);
-    cursor: pointer;
-  }
-  .top-bar .sep {
-    opacity: 0.3;
-  }
-
-  /* Sticky Header */
-  header {
-    background: var(--white);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-    border-bottom: 2px solid var(--gold);
-    padding: 12px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo-container img {
-    width: 150px;
-    height: auto;
-    display: block;
-    object-fit: contain;
-  }
-  header nav {
-    display: flex;
-    gap: 28px;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  header nav a {
-    color: var(--ink);
-    position: relative;
-    padding: 8px 0;
-  }
-  header nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--maroon);
-    transition: var(--transition);
-  }
-  header nav a:hover {
-    color: var(--maroon);
-  }
-  header nav a:hover::after {
-    width: 100%;
-  }
-  .header-actions {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  .btn-header-cta {
-    background: var(--maroon);
-    color: var(--white);
-    padding: 10px 22px;
-    border-radius: 5px;
-    font-size: 13.5px;
-    font-weight: 700;
-    border: 1px solid var(--maroon);
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(158, 10, 15, 0.2);
-  }
-  .btn-header-cta:hover {
-    background: var(--maroon-dark);
-    border-color: var(--maroon-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(158, 10, 15, 0.3);
-  }
-  .search-trigger {
-    width: 38px;
-    height: 38px;
-    background: var(--cream);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--maroon-dark);
-    font-size: 16px;
-    cursor: pointer;
-    transition: var(--transition);
-    border: 1px solid var(--line);
-  }
-  .search-trigger:hover {
-    background: var(--maroon-light);
-    color: var(--maroon);
-    border-color: var(--maroon);
-  }
-
-  /* Breadcrumb */
-  .breadcrumb {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 24px 0;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--ink-soft);
-  }
-  .breadcrumb a {
-    color: var(--maroon);
-    font-weight: 600;
-  }
-  .breadcrumb span {
-    margin: 0 8px;
-    opacity: 0.5;
-  }
-
-  /* Hero Section */
-  .hero {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px 24px 60px;
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 48px;
-    align-items: start;
-  }
-  .hero-content {
-    padding-top: 10px;
-  }
-  .hero-eyebrow {
-    color: var(--gold-dark);
-    font-weight: 800;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    display: inline-block;
-    border-bottom: 2px solid var(--gold);
-    padding-bottom: 4px;
-  }
-  .hero h1 {
-    font-size: 44px;
-    line-height: 1.15;
-    margin-bottom: 18px;
-    letter-spacing: -0.5px;
-  }
-  .hero-desc {
-    color: var(--ink-soft);
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 26px;
-  }
-  .hero-badges {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-  }
-  .badge {
-    background: var(--white);
-    color: var(--maroon-dark);
-    font-size: 13px;
-    font-weight: 700;
-    padding: 8px 16px;
-    border-radius: 30px;
-    border: 1px solid var(--gold);
-    box-shadow: var(--shadow-sm);
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .badge::before {
-    content: '✦';
-    color: var(--gold);
-  }
-  .hero-ctas {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .btn-primary {
-    background: var(--maroon);
-    color: var(--white);
-    padding: 14px 30px;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 15px;
-    border: 1px solid var(--maroon);
-    cursor: pointer;
-    box-shadow: 0 4px 14px rgba(158, 10, 15, 0.25);
-    display: inline-block;
-  }
-  .btn-primary:hover {
-    background: var(--maroon-dark);
-    border-color: var(--maroon-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(158, 10, 15, 0.35);
-  }
-  .btn-secondary {
-    background: transparent;
-    color: var(--maroon);
-    padding: 14px 30px;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 15px;
-    border: 2px solid var(--maroon);
-    cursor: pointer;
-    display: inline-block;
-  }
-  .btn-secondary:hover {
-    background: var(--maroon-light);
-    transform: translateY(-2px);
-  }
-
-  /* Right Side Form Container in Hero */
-  .hero-form-wrapper {
-    background: var(--white);
-    border-radius: 14px;
-    border: 2px solid var(--maroon);
-    padding: 28px;
-    box-shadow: var(--shadow-md);
-    position: relative;
-    overflow: hidden;
-  }
-  .hero-form-wrapper h3 {
-    font-size: 22px;
-    margin-bottom: 6px;
-    color: var(--maroon-dark);
-  }
-  .hero-form-wrapper .subtitle {
-    font-size: 13px;
-    color: var(--ink-soft);
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
-  .form-group-hero {
-    margin-bottom: 12px;
-  }
-  .form-control-hero {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1.5px solid var(--line);
-    border-radius: 6px;
-    font-family: var(--font-body);
-    font-size: 13.5px;
-    color: var(--ink);
-    background: var(--cream);
-    transition: var(--transition);
-  }
-  .form-control-hero:focus {
-    border-color: var(--maroon);
-    background: var(--white);
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(158, 10, 15, 0.1);
-  }
-  .btn-submit-hero {
-    width: 100%;
-    padding: 14px;
-    background: var(--maroon);
-    color: var(--white);
-    border: none;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 14.5px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(158, 10, 15, 0.2);
-    transition: var(--transition);
-    margin-top: 8px;
-  }
-  .btn-submit-hero:hover {
-    background: var(--maroon-dark);
-    box-shadow: 0 6px 16px rgba(158, 10, 15, 0.3);
-  }
-  
-  /* Success state for Hero Form */
-  .success-content-hero {
-    text-align: center;
-    padding: 20px 10px;
-  }
-  .success-icon-hero {
-    width: 48px;
-    height: 48px;
-    background: var(--maroon-light);
-    color: var(--maroon);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin: 0 auto 16px;
-    border: 2px solid var(--maroon);
-  }
-  .success-content-hero h4 {
-    font-family: var(--font-heading);
-    font-size: 20px;
-    color: var(--maroon-dark);
-    margin-bottom: 8px;
-  }
-  .success-content-hero p {
-    color: var(--ink-soft);
-    font-size: 13px;
-    line-height: 1.5;
-  }
-
-  /* Curriculum Spec Accordion Grid & Column */
-  .spec-accordion-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    align-items: start;
-    margin-top: 24px;
-  }
-  .spec-accordion-column {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  @media(max-width: 768px) {
-    .spec-accordion-grid {
-      grid-template-columns: 1fr;
-      gap: 12px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PGDM in Human Resource Management | Asian Business School (ABS) Noida</title>
+  <meta name="description"
+    content="Pursue AICTE approved, NBA accredited 2-year PGDM in Human Resource Management at Asian Business School, Noida. Industry-aligned curriculum, global exposure, and 100% placement support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --maroon: #9E0A0F;
+      --maroon-dark: #6B0407;
+      --maroon-light: #FCEAEA;
+      --gold: #C5A059;
+      --gold-dark: #A37E3B;
+      --gold-light: #F7EFE1;
+      --cream: #FAF7F2;
+      --ink: #1C1816;
+      --ink-soft: #5C5451;
+      --line: #E8DFD3;
+      --white: #ffffff;
+      --shadow-sm: 0 2px 8px rgba(107, 4, 7, 0.04);
+      --shadow-md: 0 8px 24px rgba(107, 4, 7, 0.06);
+      --shadow-lg: 0 16px 40px rgba(107, 4, 7, 0.1);
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
-  }
 
-  .spec-accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .spec-item {
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    overflow: hidden;
-    background: var(--cream);
-    transition: var(--transition);
-  }
-  .spec-item.active {
-    border-color: var(--maroon);
-    background: var(--white);
-    box-shadow: var(--shadow-sm);
-  }
-  .spec-header {
-    padding: 16px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-    transition: var(--transition);
-  }
-  .spec-header h4 {
-    font-family: var(--font-body);
-    font-size: 14.5px;
-    font-weight: 700;
-    color: var(--ink);
-    transition: var(--transition);
-  }
-  .spec-item.active .spec-header h4 {
-    color: var(--maroon);
-  }
-  .spec-icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: var(--white);
-    border: 1px solid var(--line);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--maroon);
-    font-size: 12px;
-    font-weight: bold;
-    transition: var(--transition);
-  }
-  .spec-item.active .spec-icon {
-    transform: rotate(180deg);
-    background: var(--maroon);
-    color: var(--white);
-    border-color: var(--maroon);
-  }
-  .spec-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease-out;
-  }
-  .spec-content-inner {
-    padding: 0 20px 16px;
-    font-size: 13.5px;
-    color: var(--ink-soft);
-    line-height: 1.5;
-  }
-
-  /* Facts Counter Section */
-  .facts {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  .facts-inner {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-top: 4px solid var(--maroon);
-    border-radius: 12px;
-    padding: 30px 20px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    box-shadow: var(--shadow-md);
-  }
-  .fact {
-    text-align: center;
-    border-right: 1px solid var(--line);
-    padding: 0 10px;
-    transition: var(--transition);
-  }
-  .fact:last-child {
-    border-right: none;
-  }
-  .fact:hover {
-    transform: translateY(-2px);
-  }
-  .fact-icon {
-    font-size: 26px;
-    color: var(--gold-dark);
-    margin-bottom: 8px;
-  }
-  .fact-val {
-    font-weight: 800;
-    font-size: 18px;
-    color: var(--maroon-dark);
-    margin-bottom: 4px;
-  }
-  .fact-label {
-    font-size: 11px;
-    color: var(--ink-soft);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-  }
-
-  /* General Section Layout */
-  section.block {
-    max-width: 1200px;
-    margin: 70px auto;
-    padding: 0 24px;
-  }
-  .section-head {
-    margin-bottom: 35px;
-    position: relative;
-  }
-  .section-eyebrow {
-    color: var(--gold-dark);
-    font-weight: 800;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    display: inline-block;
-  }
-  .section-head h2 {
-    font-size: 32px;
-    line-height: 1.2;
-  }
-  .section-head p {
-    margin-top: 14px;
-    color: var(--ink-soft);
-    font-size: 16px;
-    max-width: 800px;
-  }
-
-  /* Overview Grid */
-  .overview-grid {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: 48px;
-    align-items: start;
-  }
-  .overview-grid p {
-    color: var(--ink-soft);
-    margin-bottom: 16px;
-    font-size: 15.5px;
-    line-height: 1.7;
-  }
-  blockquote {
-    border-left: 4px solid var(--gold);
-    background: var(--gold-light);
-    padding: 20px 24px;
-    border-radius: 0 10px 10px 0;
-    font-family: var(--font-heading);
-    font-style: italic;
-    color: var(--maroon-dark);
-    font-size: 18px;
-    margin: 24px 0;
-    box-shadow: var(--shadow-sm);
-  }
-  blockquote cite {
-    display: block;
-    font-family: var(--font-body);
-    font-style: normal;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--ink-soft);
-    margin-top: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  .capabilities {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 28px;
-    box-shadow: var(--shadow-md);
-  }
-  .capabilities h3 {
-    font-size: 18px;
-    margin-bottom: 16px;
-    color: var(--maroon-dark);
-  }
-  .capabilities ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .capabilities li {
-    display: flex;
-    gap: 12px;
-    font-size: 14px;
-    color: var(--ink-soft);
-    padding: 10px 0;
-    border-bottom: 1px dashed var(--line);
-    font-weight: 500;
-  }
-  .capabilities li:last-child {
-    border-bottom: none;
-  }
-  .capabilities li::before {
-    content: "✓";
-    color: var(--gold-dark);
-    font-weight: 800;
-  }
-
-  /* Fee and Eligibility Section */
-  .fee-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
-    gap: 24px;
-  }
-  .fee-card {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 28px;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
-  }
-  .fee-card.featured {
-    border: 2px solid var(--gold);
-    background: linear-gradient(180deg, var(--white) 0%, var(--gold-light) 100%);
-    position: relative;
-  }
-  .fee-card.featured::before {
-    content: 'POPULAR CHOICE';
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--gold-dark);
-    color: var(--white);
-    font-size: 10px;
-    font-weight: 800;
-    padding: 4px 12px;
-    border-radius: 30px;
-    letter-spacing: 1px;
-  }
-  .fee-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-  }
-  .fee-card h3 {
-    font-size: 16px;
-    color: var(--maroon-dark);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .fee-card p {
-    font-size: 14px;
-    color: var(--ink-soft);
-    line-height: 1.6;
-  }
-  .fee-highlight {
-    font-family: var(--font-heading);
-    font-size: 34px;
-    color: var(--maroon);
-    font-weight: 700;
-    margin: 12px 0;
-  }
-  .fee-card ul {
-    list-style: none;
-    margin: 16px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .fee-card ul li {
-    font-size: 13px;
-    color: var(--ink-soft);
-    display: flex;
-    gap: 8px;
-  }
-  .fee-card ul li::before {
-    content: '•';
-    color: var(--gold-dark);
-    font-weight: bold;
-  }
-
-  /* USPs / Why ABS */
-  .usp-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-  .usp-card {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 30px 20px;
-    text-align: center;
-    transition: var(--transition);
-    box-shadow: var(--shadow-md);
-  }
-  .usp-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--gold);
-    box-shadow: var(--shadow-lg);
-  }
-  .usp-icon {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: var(--gold-light);
-    color: var(--maroon);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 16px;
-    font-size: 22px;
-    box-shadow: var(--shadow-sm);
-  }
-  .usp-title {
-    font-weight: 700;
-    font-size: 15.5px;
-    margin-bottom: 8px;
-    color: var(--ink);
-  }
-  .usp-desc {
-    font-size: 13px;
-    color: var(--ink-soft);
-    line-height: 1.5;
-  }
-
-  /* Faculty Section */
-  .faculty-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-  .faculty-card {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    overflow: hidden;
-    text-align: center;
-    transition: var(--transition);
-    box-shadow: var(--shadow-md);
-    padding: 24px 16px;
-  }
-  .faculty-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--gold);
-  }
-  .faculty-avatar {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin: 0 auto 16px;
-    overflow: hidden;
-    border: 3px solid var(--gold-light);
-  }
-  .faculty-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .faculty-name {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--maroon-dark);
-    margin-bottom: 4px;
-  }
-  .faculty-role {
-    font-size: 12px;
-    color: var(--gold-dark);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 8px;
-  }
-  .faculty-desc {
-    font-size: 12.5px;
-    color: var(--ink-soft);
-    line-height: 1.4;
-  }
-
-  /* Career Support grid */
-  .subject-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  .subject-card {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 22px 24px;
-    transition: var(--transition);
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    box-shadow: var(--shadow-sm);
-  }
-  .subject-card:hover {
-    border-color: var(--gold);
-    box-shadow: var(--shadow-md);
-    transform: translateX(4px);
-  }
-  .subject-card-icon {
-    width: 38px;
-    height: 38px;
-    border-radius: 8px;
-    background: var(--maroon-light);
-    color: var(--maroon);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    flex-shrink: 0;
-  }
-  .subject-name {
-    font-weight: 600;
-    font-size: 15px;
-    color: var(--ink);
-  }
-
-  /* Student Topper Profiles */
-  .student-toppers-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-  }
-  .topper-card {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-left: 5px solid var(--maroon);
-    border-radius: 0 12px 12px 0;
-    padding: 28px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    box-shadow: var(--shadow-md);
-  }
-  .topper-img {
-    width: 84px;
-    height: 84px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid var(--gold-light);
-    flex-shrink: 0;
-  }
-  .topper-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .topper-quote {
-    font-style: italic;
-    color: var(--ink);
-    font-size: 14.5px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-  .topper-details .name {
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--maroon-dark);
-  }
-  .topper-details .role {
-    font-size: 12px;
-    color: var(--ink-soft);
-    font-weight: 500;
-  }
-  .topper-details .pkg {
-    background: var(--gold-light);
-    color: var(--gold-dark);
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 11px;
-    font-weight: 700;
-    margin-top: 4px;
-  }
-
-  /* Placements Stat Band */
-  .placement-band {
-    background: linear-gradient(135deg, var(--maroon-dark) 0%, #4A0204 100%);
-    border-radius: 14px;
-    padding: 40px;
-    color: var(--white);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    text-align: center;
-    box-shadow: var(--shadow-lg);
-  }
-  .placement-stat {
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
-  }
-  .placement-stat:last-child {
-    border-right: none;
-  }
-  .placement-stat .num {
-    font-family: var(--font-heading);
-    font-size: 38px;
-    font-weight: 700;
-    color: var(--gold);
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  }
-  .placement-stat .label {
-    font-size: 12px;
-    opacity: 0.9;
-    margin-top: 6px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-  }
-
-  /* Hiring Partners Marquee */
-  .partners-strip {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 30px 24px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: var(--shadow-md);
-  }
-  .partners-track {
-    display: flex;
-    gap: 24px;
-    width: max-content;
-    animation: scrollPartners 25s linear infinite;
-  }
-  .partners-strip:hover .partners-track {
-    animation-play-state: paused;
-  }
-  .partner-logo {
-    flex: 0 0 auto;
-    width: 140px;
-    height: 60px;
-    background: var(--cream);
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 13.5px;
-    color: var(--maroon-dark);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-  }
-  .partner-logo:hover {
-    border-color: var(--gold);
-    background: var(--white);
-  }
-  @keyframes scrollPartners {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
-  /* Testimonial Carousel */
-  .carousel-wrapper {
-    position: relative;
-  }
-  .carousel-track {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding-bottom: 12px;
-    scrollbar-width: none;
-  }
-  .carousel-track::-webkit-scrollbar {
-    display: none;
-  }
-  .carousel-track .testimonial {
-    scroll-snap-align: start;
-    flex: 0 0 100%;
-    max-width: 100%;
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-left: 5px solid var(--gold);
-    border-radius: 0 12px 12px 0;
-    padding: 30px;
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    box-shadow: var(--shadow-md);
-  }
-  @media(min-width: 768px) {
-    .carousel-track .testimonial {
-      flex: 0 0 calc(50% - 10px);
-      max-width: calc(50% - 10px);
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-  }
-  .avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid var(--gold-light);
-    flex-shrink: 0;
-  }
-  .avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .testimonial p {
-    font-style: italic;
-    color: var(--ink);
-    font-size: 15px;
-    margin-bottom: 12px;
-    line-height: 1.6;
-  }
-  .testimonial .name {
-    font-weight: 700;
-    font-size: 13.5px;
-    color: var(--maroon-dark);
-  }
-  .testimonial .role {
-    font-size: 12px;
-    color: var(--ink-soft);
-    font-weight: 500;
-  }
-  .carousel-arrows {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-    margin-bottom: 16px;
-  }
-  .carousel-arrow {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: 1px solid var(--line);
-    background: var(--white);
-    color: var(--maroon);
-    cursor: pointer;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition);
-    box-shadow: var(--shadow-sm);
-  }
-  .carousel-arrow:hover {
-    border-color: var(--maroon);
-    background: var(--maroon);
-    color: var(--white);
-    box-shadow: var(--shadow-md);
-  }
 
-  /* Blog Cards */
-  .blog-track {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 12px;
-    scrollbar-width: none;
-  }
-  .blog-track::-webkit-scrollbar {
-    display: none;
-  }
-  .blog-card {
-    scroll-snap-align: start;
-    flex: 0 0 280px;
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: var(--transition);
-    box-shadow: var(--shadow-md);
-    display: flex;
-    flex-direction: column;
-  }
-  .blog-card:hover {
-    border-color: var(--gold);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-  }
-  .blog-thumb {
-    height: 140px;
-    overflow: hidden;
-    position: relative;
-  }
-  .blog-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition);
-  }
-  .blog-card:hover .blog-thumb img {
-    transform: scale(1.05);
-  }
-  .blog-body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
-  .blog-date {
-    font-size: 11px;
-    color: var(--gold-dark);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-  }
-  .blog-title {
-    font-weight: 700;
-    font-size: 14.5px;
-    color: var(--ink);
-    margin-bottom: 12px;
-    line-height: 1.4;
-  }
-  .blog-link {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--maroon);
-    margin-top: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-  }
-  .blog-link:hover {
-    color: var(--maroon-dark);
-  }
+    body {
+      font-family: var(--font-body);
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-  /* Admission Steps */
-  .steps {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-  .step {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 24px 20px;
-    text-align: center;
-    position: relative;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition);
-  }
-  .step:hover {
-    border-color: var(--gold);
-    transform: translateY(-2px);
-  }
-  .step-num {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: var(--maroon);
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 14px;
-    margin: 0 auto 16px;
-    box-shadow: 0 3px 8px rgba(158, 10, 15, 0.3);
-  }
-  .step-title {
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--ink);
-    line-height: 1.4;
-  }
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--font-heading);
+      color: var(--maroon-dark);
+      font-weight: 700;
+    }
 
-  /* FAQs Accordion */
-  .faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-  .faq-item {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-  }
-  .faq-item.open {
-    border-color: var(--maroon);
-    box-shadow: var(--shadow-md);
-  }
-  .faq-q {
-    padding: 20px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 15.5px;
-    color: var(--ink);
-    transition: var(--transition);
-    user-select: none;
-  }
-  .faq-q:hover {
-    color: var(--maroon);
-  }
-  .faq-icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: var(--cream);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--maroon-dark);
-    font-size: 14px;
-    transition: var(--transition);
-  }
-  .faq-item.open .faq-icon {
-    transform: rotate(45deg);
-    background: var(--maroon);
-    color: var(--white);
-  }
-  .faq-a {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-  .faq-a-inner {
-    padding: 0 24px 20px;
-    font-size: 14px;
-    color: var(--ink-soft);
-    line-height: 1.6;
-  }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
 
-  /* Sticky bottom CTA */
-  .sticky-cta {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--maroon-dark);
-    color: var(--white);
-    padding: 16px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 90;
-    border-top: 3px solid var(--gold);
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
-  }
-  .sticky-cta .left {
-    font-size: 14.5px;
-    font-weight: 500;
-    letter-spacing: 0.2px;
-  }
-  .sticky-cta .left b {
-    color: var(--gold);
-  }
-  .sticky-cta .actions {
-    display: flex;
-    gap: 12px;
-  }
-  .sticky-cta .btn-primary {
-    background: var(--gold);
-    color: var(--maroon-dark);
-    border-color: var(--gold);
-    font-size: 13.5px;
-    padding: 10px 22px;
-    box-shadow: none;
-  }
-  .sticky-cta .btn-primary:hover {
-    background: var(--gold-dark);
-    border-color: var(--gold-dark);
-    color: var(--white);
-  }
-  .sticky-cta .btn-secondary {
-    color: var(--white);
-    border-color: rgba(255, 255, 255, 0.4);
-    font-size: 13.5px;
-    padding: 10px 22px;
-  }
-  .sticky-cta .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-  }
-
-  /* Lead Popup Form Modal */
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(28, 24, 22, 0.6);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-  }
-  .modal-overlay.active {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .modal-container {
-    background: var(--white);
-    border-radius: 16px;
-    width: 100%;
-    max-width: 480px;
-    box-shadow: var(--shadow-lg);
-    border: 2px solid var(--gold);
-    position: relative;
-    transform: scale(0.9);
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    overflow: hidden;
-  }
-  .modal-overlay.active .modal-container {
-    transform: scale(1);
-  }
-  .modal-close {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: var(--cream);
-    color: var(--ink);
-    border: 1px solid var(--line);
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: var(--transition);
-    z-index: 10;
-  }
-  .modal-close:hover {
-    background: var(--maroon-light);
-    color: var(--maroon);
-    border-color: var(--maroon);
-  }
-  .modal-header {
-    background: var(--maroon-dark);
-    padding: 24px;
-    color: var(--white);
-    text-align: center;
-    position: relative;
-  }
-  .modal-header h3 {
-    color: var(--gold);
-    font-size: 22px;
-    margin-bottom: 6px;
-  }
-  .modal-header p {
-    font-size: 12px;
-    opacity: 0.85;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  .modal-body {
-    padding: 28px 24px;
-  }
-  .form-group {
-    margin-bottom: 18px;
-  }
-  .form-group label {
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--ink-soft);
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  .form-control {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1.5px solid var(--line);
-    border-radius: 6px;
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--ink);
-    background: var(--cream);
-    transition: var(--transition);
-  }
-  .form-control:focus {
-    border-color: var(--maroon);
-    background: var(--white);
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(158, 10, 15, 0.1);
-  }
-  .modal-body button[type="submit"] {
-    width: 100%;
-    padding: 14px;
-    background: var(--maroon);
-    color: var(--white);
-    border: none;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 15px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(158, 10, 15, 0.2);
-    transition: var(--transition);
-  }
-  .modal-body button[type="submit"]:hover {
-    background: var(--maroon-dark);
-    box-shadow: 0 6px 16px rgba(158, 10, 15, 0.3);
-  }
-  
-  /* Success screen inside modal */
-  .success-content {
-    display: none;
-    text-align: center;
-    padding: 40px 24px;
-  }
-  .success-icon {
-    width: 64px;
-    height: 64px;
-    background: var(--maroon-light);
-    color: var(--maroon);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    margin: 0 auto 20px;
-    border: 2px solid var(--maroon);
-  }
-  .success-content h3 {
-    font-size: 24px;
-    margin-bottom: 12px;
-  }
-  .success-content p {
-    color: var(--ink-soft);
-    font-size: 14.5px;
-    line-height: 1.6;
-    margin-bottom: 24px;
-  }
-
-  /* Footer */
-  footer {
-    background: #1C0A0B;
-    color: #CFC4C2;
-    padding: 40px 24px;
-    text-align: center;
-    font-size: 13px;
-    border-top: 4px solid var(--gold);
-    line-height: 1.8;
-  }
-  footer b {
-    color: var(--gold);
-  }
-
-  /* Responsive Design Adjustments */
-  @media(max-width: 992px) {
-    .hero {
-      grid-template-columns: 1fr;
-      gap: 36px;
-    }
-    .overview-grid {
-      grid-template-columns: 1fr;
-      gap: 32px;
-    }
-    .fee-grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-    .usp-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .faculty-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .subject-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-    .student-toppers-grid {
-      grid-template-columns: 1fr;
-    }
-    .facts-inner {
-      grid-template-columns: repeat(3, 1fr);
-      row-gap: 20px;
-    }
-  }
-
-  @media(max-width: 768px) {
-    header {
-      padding: 12px 20px;
-    }
-    header nav {
-      display: none; /* Hide default nav menu on mobile layout */
-    }
+    /* Utility Top Bar */
     .top-bar {
-      display: none;
+      background: #111;
+      color: #eee;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 16px;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .facts-inner {
-      grid-template-columns: repeat(2, 1fr);
+
+    .top-bar span {
+      opacity: 0.85;
+      transition: var(--transition);
     }
-    .placement-band {
-      grid-template-columns: 1fr;
-      gap: 20px;
+
+    .top-bar span:hover {
+      opacity: 1;
+      color: var(--gold);
+      cursor: pointer;
     }
-    .placement-stat {
-      border-right: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-      padding-bottom: 20px;
+
+    .top-bar .sep {
+      opacity: 0.3;
     }
-    .placement-stat:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
+
+    /* Sticky Header */
+    header {
+      background: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      border-bottom: 2px solid var(--gold);
+      padding: 12px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    .steps {
-      grid-template-columns: repeat(2, 1fr);
+
+    .logo-container img {
+      width: 150px;
+      height: auto;
+      display: block;
+      object-fit: contain;
     }
-    .sticky-cta {
+
+    header nav {
+      display: flex;
+      gap: 28px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    header nav a {
+      color: var(--ink);
+      position: relative;
+      padding: 8px 0;
+    }
+
+    header nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--maroon);
+      transition: var(--transition);
+    }
+
+    header nav a:hover {
+      color: var(--maroon);
+    }
+
+    header nav a:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-header-cta {
+      background: var(--maroon);
+      color: var(--white);
+      padding: 10px 22px;
+      border-radius: 5px;
+      font-size: 13.5px;
+      font-weight: 700;
+      border: 1px solid var(--maroon);
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(158, 10, 15, 0.2);
+    }
+
+    .btn-header-cta:hover {
+      background: var(--maroon-dark);
+      border-color: var(--maroon-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(158, 10, 15, 0.3);
+    }
+
+    .search-trigger {
+      width: 38px;
+      height: 38px;
+      background: var(--cream);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--maroon-dark);
+      font-size: 16px;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid var(--line);
+    }
+
+    .search-trigger:hover {
+      background: var(--maroon-light);
+      color: var(--maroon);
+      border-color: var(--maroon);
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 24px 0;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-soft);
+    }
+
+    .breadcrumb a {
+      color: var(--maroon);
+      font-weight: 600;
+    }
+
+    .breadcrumb span {
+      margin: 0 8px;
+      opacity: 0.5;
+    }
+
+    /* Hero Section */
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 24px 60px;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .hero-content {
+      padding-top: 10px;
+    }
+
+    .hero-eyebrow {
+      color: var(--gold-dark);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: inline-block;
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 4px;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-desc {
+      color: var(--ink-soft);
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 26px;
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .badge {
+      background: var(--white);
+      color: var(--maroon-dark);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 30px;
+      border: 1px solid var(--gold);
+      box-shadow: var(--shadow-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge::before {
+      content: '✦';
+      color: var(--gold);
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--maroon);
+      color: var(--white);
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 15px;
+      border: 1px solid var(--maroon);
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(158, 10, 15, 0.25);
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: var(--maroon-dark);
+      border-color: var(--maroon-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(158, 10, 15, 0.35);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--maroon);
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 15px;
+      border: 2px solid var(--maroon);
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .btn-secondary:hover {
+      background: var(--maroon-light);
+      transform: translateY(-2px);
+    }
+
+    /* Right Side Form Container in Hero */
+    .hero-form-wrapper {
+      background: var(--white);
+      border-radius: 14px;
+      border: 2px solid var(--maroon);
+      padding: 28px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-form-wrapper h3 {
+      font-size: 22px;
+      margin-bottom: 6px;
+      color: var(--maroon-dark);
+    }
+
+    .hero-form-wrapper .subtitle {
+      font-size: 13px;
+      color: var(--ink-soft);
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .form-group-hero {
+      margin-bottom: 12px;
+    }
+
+    .form-control-hero {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--line);
+      border-radius: 6px;
+      font-family: var(--font-body);
+      font-size: 13.5px;
+      color: var(--ink);
+      background: var(--cream);
+      transition: var(--transition);
+    }
+
+    .form-control-hero:focus {
+      border-color: var(--maroon);
+      background: var(--white);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(158, 10, 15, 0.1);
+    }
+
+    .btn-submit-hero {
+      width: 100%;
+      padding: 14px;
+      background: var(--maroon);
+      color: var(--white);
+      border: none;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 14.5px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(158, 10, 15, 0.2);
+      transition: var(--transition);
+      margin-top: 8px;
+    }
+
+    .btn-submit-hero:hover {
+      background: var(--maroon-dark);
+      box-shadow: 0 6px 16px rgba(158, 10, 15, 0.3);
+    }
+
+    /* Success state for Hero Form */
+    .success-content-hero {
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .success-icon-hero {
+      width: 48px;
+      height: 48px;
+      background: var(--maroon-light);
+      color: var(--maroon);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin: 0 auto 16px;
+      border: 2px solid var(--maroon);
+    }
+
+    .success-content-hero h4 {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      color: var(--maroon-dark);
+      margin-bottom: 8px;
+    }
+
+    .success-content-hero p {
+      color: var(--ink-soft);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* Curriculum Spec Accordion Grid & Column */
+    .spec-accordion-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+      margin-top: 24px;
+    }
+
+    .spec-accordion-column {
+      display: flex;
       flex-direction: column;
       gap: 12px;
-      padding: 16px 20px;
-      text-align: center;
     }
-    .hero h1 {
-      font-size: 34px;
-    }
-  }
 
-  @media(max-width: 480px) {
+    @media(max-width: 768px) {
+      .spec-accordion-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+    }
+
+    .spec-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .spec-item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--cream);
+      transition: var(--transition);
+    }
+
+    .spec-item.active {
+      border-color: var(--maroon);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .spec-header {
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    .spec-header h4 {
+      font-family: var(--font-body);
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--ink);
+      transition: var(--transition);
+    }
+
+    .spec-item.active .spec-header h4 {
+      color: var(--maroon);
+    }
+
+    .spec-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--maroon);
+      font-size: 12px;
+      font-weight: bold;
+      transition: var(--transition);
+    }
+
+    .spec-item.active .spec-icon {
+      transform: rotate(180deg);
+      background: var(--maroon);
+      color: var(--white);
+      border-color: var(--maroon);
+    }
+
+    .spec-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease-out;
+    }
+
+    .spec-content-inner {
+      padding: 0 20px 16px;
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+
+    /* Facts Counter Section */
+    .facts {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
     .facts-inner {
-      grid-template-columns: 1fr;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--maroon);
+      border-radius: 12px;
+      padding: 30px 20px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      box-shadow: var(--shadow-md);
     }
+
+    .fact {
+      text-align: center;
+      border-right: 1px solid var(--line);
+      padding: 0 10px;
+      transition: var(--transition);
+    }
+
+    .fact:last-child {
+      border-right: none;
+    }
+
+    .fact:hover {
+      transform: translateY(-2px);
+    }
+
+    .fact-icon {
+      font-size: 26px;
+      color: var(--gold-dark);
+      margin-bottom: 8px;
+    }
+
+    .fact-val {
+      font-weight: 800;
+      font-size: 18px;
+      color: var(--maroon-dark);
+      margin-bottom: 4px;
+    }
+
+    .fact-label {
+      font-size: 11px;
+      color: var(--ink-soft);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+    /* General Section Layout */
+    section.block {
+      max-width: 1200px;
+      margin: 70px auto;
+      padding: 0 24px;
+    }
+
+    .section-head {
+      margin-bottom: 35px;
+      position: relative;
+    }
+
+    .section-eyebrow {
+      color: var(--gold-dark);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .section-head h2 {
+      font-size: 32px;
+      line-height: 1.2;
+    }
+
+    .section-head p {
+      margin-top: 14px;
+      color: var(--ink-soft);
+      font-size: 16px;
+      max-width: 800px;
+    }
+
+    /* Overview Grid */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .overview-grid p {
+      color: var(--ink-soft);
+      margin-bottom: 16px;
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--gold);
+      background: var(--gold-light);
+      padding: 20px 24px;
+      border-radius: 0 10px 10px 0;
+      font-family: var(--font-heading);
+      font-style: italic;
+      color: var(--maroon-dark);
+      font-size: 18px;
+      margin: 24px 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    blockquote cite {
+      display: block;
+      font-family: var(--font-body);
+      font-style: normal;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink-soft);
+      margin-top: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .capabilities {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .capabilities h3 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      color: var(--maroon-dark);
+    }
+
+    .capabilities ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .capabilities li {
+      display: flex;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--ink-soft);
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--line);
+      font-weight: 500;
+    }
+
+    .capabilities li:last-child {
+      border-bottom: none;
+    }
+
+    .capabilities li::before {
+      content: "✓";
+      color: var(--gold-dark);
+      font-weight: 800;
+    }
+
+    /* Fee and Eligibility Section */
+    .fee-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr 1fr;
+      gap: 24px;
+    }
+
+    .fee-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fee-card.featured {
+      border: 2px solid var(--gold);
+      background: linear-gradient(180deg, var(--white) 0%, var(--gold-light) 100%);
+      position: relative;
+    }
+
+    .fee-card.featured::before {
+      content: 'POPULAR CHOICE';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold-dark);
+      color: var(--white);
+      font-size: 10px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 30px;
+      letter-spacing: 1px;
+    }
+
+    .fee-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .fee-card h3 {
+      font-size: 16px;
+      color: var(--maroon-dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .fee-card p {
+      font-size: 14px;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    .fee-highlight {
+      font-family: var(--font-heading);
+      font-size: 34px;
+      color: var(--maroon);
+      font-weight: 700;
+      margin: 12px 0;
+    }
+
+    .fee-card ul {
+      list-style: none;
+      margin: 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .fee-card ul li {
+      font-size: 13px;
+      color: var(--ink-soft);
+      display: flex;
+      gap: 8px;
+    }
+
+    .fee-card ul li::before {
+      content: '•';
+      color: var(--gold-dark);
+      font-weight: bold;
+    }
+
+    /* USPs / Why ABS */
     .usp-grid {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
     }
+
+    .usp-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: var(--transition);
+      box-shadow: var(--shadow-md);
+    }
+
+    .usp-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .usp-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--gold-light);
+      color: var(--maroon);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 22px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .usp-title {
+      font-weight: 700;
+      font-size: 15.5px;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .usp-desc {
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+
+    /* Faculty Section */
     .faculty-grid {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
     }
+
+    .faculty-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: var(--transition);
+      box-shadow: var(--shadow-md);
+      padding: 24px 16px;
+    }
+
+    .faculty-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--gold);
+    }
+
+    .faculty-avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      overflow: hidden;
+      border: 3px solid var(--gold-light);
+    }
+
+    .faculty-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .faculty-name {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--maroon-dark);
+      margin-bottom: 4px;
+    }
+
+    .faculty-role {
+      font-size: 12px;
+      color: var(--gold-dark);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .faculty-desc {
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      line-height: 1.4;
+    }
+
+    /* Career Support grid */
     .subject-grid {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
+
+    .subject-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 22px 24px;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .subject-card:hover {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-md);
+      transform: translateX(4px);
+    }
+
+    .subject-card-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: var(--maroon-light);
+      color: var(--maroon);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .subject-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--ink);
+    }
+
+    /* Student Topper Profiles */
+    .student-toppers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .topper-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--maroon);
+      border-radius: 0 12px 12px 0;
+      padding: 28px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      box-shadow: var(--shadow-md);
+    }
+
+    .topper-img {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--gold-light);
+      flex-shrink: 0;
+    }
+
+    .topper-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .topper-quote {
+      font-style: italic;
+      color: var(--ink);
+      font-size: 14.5px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .topper-details .name {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--maroon-dark);
+    }
+
+    .topper-details .role {
+      font-size: 12px;
+      color: var(--ink-soft);
+      font-weight: 500;
+    }
+
+    .topper-details .pkg {
+      background: var(--gold-light);
+      color: var(--gold-dark);
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 4px;
+    }
+
+    /* Placements Stat Band */
+    .placement-band {
+      background: linear-gradient(135deg, var(--maroon-dark) 0%, #4A0204 100%);
+      border-radius: 14px;
+      padding: 40px;
+      color: var(--white);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .placement-stat {
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .placement-stat:last-child {
+      border-right: none;
+    }
+
+    .placement-stat .num {
+      font-family: var(--font-heading);
+      font-size: 38px;
+      font-weight: 700;
+      color: var(--gold);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .placement-stat .label {
+      font-size: 12px;
+      opacity: 0.9;
+      margin-top: 6px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+    }
+
+    /* Hiring Partners Marquee */
+    .partners-strip {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 30px 24px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow-md);
+    }
+
+    .partners-track {
+      display: flex;
+      gap: 24px;
+      width: max-content;
+      animation: scrollPartners 25s linear infinite;
+    }
+
+    .partners-strip:hover .partners-track {
+      animation-play-state: paused;
+    }
+
+    .partner-logo {
+      flex: 0 0 auto;
+      width: 140px;
+      height: 60px;
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 13.5px;
+      color: var(--maroon-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .partner-logo:hover {
+      border-color: var(--gold);
+      background: var(--white);
+    }
+
+    @keyframes scrollPartners {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Testimonial Carousel */
+    .carousel-wrapper {
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding-bottom: 12px;
+      scrollbar-width: none;
+    }
+
+    .carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-track .testimonial {
+      scroll-snap-align: start;
+      flex: 0 0 100%;
+      max-width: 100%;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+      padding: 30px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      box-shadow: var(--shadow-md);
+    }
+
+    @media(min-width: 768px) {
+      .carousel-track .testimonial {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+      }
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--gold-light);
+      flex-shrink: 0;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      color: var(--ink);
+      font-size: 15px;
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .testimonial .name {
+      font-weight: 700;
+      font-size: 13.5px;
+      color: var(--maroon-dark);
+    }
+
+    .testimonial .role {
+      font-size: 12px;
+      color: var(--ink-soft);
+      font-weight: 500;
+    }
+
+    .carousel-arrows {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .carousel-arrow {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: var(--white);
+      color: var(--maroon);
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .carousel-arrow:hover {
+      border-color: var(--maroon);
+      background: var(--maroon);
+      color: var(--white);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Blog Cards */
+    .blog-track {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 12px;
+      scrollbar-width: none;
+    }
+
+    .blog-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .blog-card {
+      scroll-snap-align: start;
+      flex: 0 0 280px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .blog-thumb {
+      height: 140px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .blog-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .blog-card:hover .blog-thumb img {
+      transform: scale(1.05);
+    }
+
+    .blog-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .blog-date {
+      font-size: 11px;
+      color: var(--gold-dark);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .blog-title {
+      font-weight: 700;
+      font-size: 14.5px;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .blog-link {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--maroon);
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .blog-link:hover {
+      color: var(--maroon-dark);
+    }
+
+    /* Admission Steps */
     .steps {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
     }
-  }
-</style>
+
+    .step {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+    }
+
+    .step:hover {
+      border-color: var(--gold);
+      transform: translateY(-2px);
+    }
+
+    .step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--maroon);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      margin: 0 auto 16px;
+      box-shadow: 0 3px 8px rgba(158, 10, 15, 0.3);
+    }
+
+    .step-title {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    /* FAQs Accordion */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .faq-item.open {
+      border-color: var(--maroon);
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-q {
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 15.5px;
+      color: var(--ink);
+      transition: var(--transition);
+      user-select: none;
+    }
+
+    .faq-q:hover {
+      color: var(--maroon);
+    }
+
+    .faq-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--maroon-dark);
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+      background: var(--maroon);
+      color: var(--white);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .faq-a-inner {
+      padding: 0 24px 20px;
+      font-size: 14px;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    /* Sticky bottom CTA */
+    .sticky-cta {
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--maroon-dark);
+      color: var(--white);
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 90;
+      border-top: 3px solid var(--gold);
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .sticky-cta .left {
+      font-size: 14.5px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .sticky-cta .left b {
+      color: var(--gold);
+    }
+
+    .sticky-cta .actions {
+      display: flex;
+      gap: 12px;
+    }
+
+    .sticky-cta .btn-primary {
+      background: var(--gold);
+      color: var(--maroon-dark);
+      border-color: var(--gold);
+      font-size: 13.5px;
+      padding: 10px 22px;
+      box-shadow: none;
+    }
+
+    .sticky-cta .btn-primary:hover {
+      background: var(--gold-dark);
+      border-color: var(--gold-dark);
+      color: var(--white);
+    }
+
+    .sticky-cta .btn-secondary {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.4);
+      font-size: 13.5px;
+      padding: 10px 22px;
+    }
+
+    .sticky-cta .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Lead Popup Form Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(28, 24, 22, 0.6);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-container {
+      background: var(--white);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: var(--shadow-lg);
+      border: 2px solid var(--gold);
+      position: relative;
+      transform: scale(0.9);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      overflow: hidden;
+    }
+
+    .modal-overlay.active .modal-container {
+      transform: scale(1);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--cream);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      z-index: 10;
+    }
+
+    .modal-close:hover {
+      background: var(--maroon-light);
+      color: var(--maroon);
+      border-color: var(--maroon);
+    }
+
+    .modal-header {
+      background: var(--maroon-dark);
+      padding: 24px;
+      color: var(--white);
+      text-align: center;
+      position: relative;
+    }
+
+    .modal-header h3 {
+      color: var(--gold);
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .modal-header p {
+      font-size: 12px;
+      opacity: 0.85;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .modal-body {
+      padding: 28px 24px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink-soft);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--line);
+      border-radius: 6px;
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--ink);
+      background: var(--cream);
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      border-color: var(--maroon);
+      background: var(--white);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(158, 10, 15, 0.1);
+    }
+
+    .modal-body button[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      background: var(--maroon);
+      color: var(--white);
+      border: none;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(158, 10, 15, 0.2);
+      transition: var(--transition);
+    }
+
+    .modal-body button[type="submit"]:hover {
+      background: var(--maroon-dark);
+      box-shadow: 0 6px 16px rgba(158, 10, 15, 0.3);
+    }
+
+    /* Success screen inside modal */
+    .success-content {
+      display: none;
+      text-align: center;
+      padding: 40px 24px;
+    }
+
+    .success-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--maroon-light);
+      color: var(--maroon);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin: 0 auto 20px;
+      border: 2px solid var(--maroon);
+    }
+
+    .success-content h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .success-content p {
+      color: var(--ink-soft);
+      font-size: 14.5px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    /* Footer */
+    footer {
+      background: #1C0A0B;
+      color: #CFC4C2;
+      padding: 40px 24px;
+      text-align: center;
+      font-size: 13px;
+      border-top: 4px solid var(--gold);
+      line-height: 1.8;
+    }
+
+    footer b {
+      color: var(--gold);
+    }
+
+    /* Responsive Design Adjustments */
+    @media(max-width: 992px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .fee-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .usp-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .subject-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .student-toppers-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .facts-inner {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+      }
+    }
+
+    @media(max-width: 768px) {
+      header {
+        padding: 12px 20px;
+      }
+
+      header nav {
+        display: none;
+        /* Hide default nav menu on mobile layout */
+      }
+
+      .top-bar {
+        display: none;
+      }
+
+      .facts-inner {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .placement-band {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .placement-stat {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding-bottom: 20px;
+      }
+
+      .placement-stat:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .sticky-cta {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 20px;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+    }
+
+    @media(max-width: 480px) {
+      .facts-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .usp-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .faculty-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .subject-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Utility bar -->
-<div class="top-bar">
-  <span>The Zine</span> <span class="sep">|</span>
-  <span>MOOCs</span> <span class="sep">|</span>
-  <span>UBA</span> <span class="sep">|</span>
-  <span>Oxford Business College</span> <span class="sep">|</span>
-  <span>Research & Development</span> <span class="sep">|</span>
-  <span>📞 Admissions Desk</span> <span class="sep">|</span>
-  <span>✉ admissions@abs.edu.in</span>
-</div>
+  <!-- Utility bar -->
+  <div class="top-bar">
+    <span>The Zine</span> <span class="sep">|</span>
+    <span>MOOCs</span> <span class="sep">|</span>
+    <span>UBA</span> <span class="sep">|</span>
+    <span>Oxford Business College</span> <span class="sep">|</span>
+    <span>Research & Development</span> <span class="sep">|</span>
+    <span>📞 Admissions Desk</span> <span class="sep">|</span>
+    <span>✉ admissions@abs.edu.in</span>
+  </div>
 
-<!-- Header -->
-<header>
-  <div class="logo-container">
-    <a href="#"><img src="https://abs.edu.in/assets/abslogo-new.png" alt="Asian Business School Logo"></a>
-  </div>
-  <nav>
-    <a href="#">About Us</a>
-    <a href="#">Programs</a>
-    <a href="#">Admissions</a>
-    <a href="#">Faculty & Research</a>
-    <a href="#">Placements</a>
-    <a href="#">Life At ABS</a>
-    <a href="#">Campus</a>
-  </nav>
-  <div class="header-actions">
-    <button class="btn-header-cta" onclick="openLeadModal('Header CTA')">Online Application</button>
-    <div class="search-trigger">🔍</div>
-  </div>
-</header>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <a href="#"><img src="https://abs.edu.in/assets/abslogo-new.png" alt="Asian Business School Logo"></a>
+    </div>
+    <nav>
+      <a href="#">About Us</a>
+      <a href="#">Programs</a>
+      <a href="#">Admissions</a>
+      <a href="#">Faculty & Research</a>
+      <a href="#">Placements</a>
+      <a href="#">Life At ABS</a>
+      <a href="#">Campus</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-header-cta" onclick="openLeadModal('Header CTA')">Online Application</button>
+      <div class="search-trigger">🔍</div>
+    </div>
+  </header>
 
-<!-- Breadcrumb -->
-<div class="breadcrumb">
-  <a href="#">Home</a><span>›</span><a href="#">Programs</a><span>›</span>PGDM in Human Resource Management
-</div>
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="#">Home</a><span>›</span><a href="#">Programs</a><span>›</span>PGDM in Human Resource Management
+  </div>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-eyebrow">2-Year PGDM • Equivalent to MBA</div>
-    <h1>PGDM in Human Resource Management</h1>
-    <p class="hero-desc">Build future-ready human resource leadership skills—from advanced HR analytics and core labour laws to organizational change management—through an AICTE-approved, NBA-accredited program at Asian Business School, Noida.</p>
-    <div class="hero-badges">
-      <span class="badge">AICTE Approved</span>
-      <span class="badge">NBA Accredited</span>
-      <span class="badge">AIU MBA Equivalence</span>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow">2-Year PGDM • Equivalent to MBA</div>
+      <h1>PGDM in Human Resource Management</h1>
+      <p class="hero-desc">Build future-ready human resource leadership skills—from advanced HR analytics and core
+        labour laws to organizational change management—through an AICTE-approved, NBA-accredited program at Asian
+        Business School, Noida.</p>
+      <div class="hero-badges">
+        <span class="badge">AICTE Approved</span>
+        <span class="badge">NBA Accredited</span>
+        <span class="badge">AIU MBA Equivalence</span>
+      </div>
+      <div class="hero-ctas">
+        <button class="btn-primary" onclick="openLeadModal('Hero Apply Now')">Apply Now 2026</button>
+        <button class="btn-secondary" onclick="openLeadModal('Hero Download Brochure')">Download Prospectus</button>
+      </div>
     </div>
-    <div class="hero-ctas">
-      <button class="btn-primary" onclick="openLeadModal('Hero Apply Now')">Apply Now 2026</button>
-      <button class="btn-secondary" onclick="openLeadModal('Hero Download Brochure')">Download Prospectus</button>
-    </div>
-  </div>
-  
-  <div class="hero-form-wrapper">
-    <h3>Apply Now</h3>
-    <div class="subtitle">Admissions Open for Batch 2026-28</div>
-    <form id="heroLeadForm" onsubmit="handleHeroFormSubmit(event)">
-      <div class="form-group-hero">
-        <input type="text" class="form-control-hero" id="heroFullName" placeholder="Full Name" required>
-      </div>
-      <div class="form-group-hero">
-        <input type="email" class="form-control-hero" id="heroEmailAddr" placeholder="Email Address" required>
-      </div>
-      <div class="form-group-hero">
-        <input type="tel" class="form-control-hero" id="heroMobileNo" pattern="[0-9]{10}" placeholder="10-Digit Mobile Number" required>
-      </div>
-      <div class="form-group-hero">
-        <select class="form-control-hero" id="heroCourseSelect" required>
-          <option value="PGDM-HRM" selected>PGDM in Human Resource Management</option>
-          <option value="PGDM-General">PGDM - General</option>
-        </select>
-      </div>
-      <div class="form-group-hero">
-        <input type="text" class="form-control-hero" id="heroCitySelect" placeholder="State / City" required>
-      </div>
-      <button type="submit" class="btn-submit-hero">Submit Application</button>
-    </form>
-    <div class="success-content-hero" id="heroFormSuccess" style="display:none;">
-      <div class="success-icon-hero">✓</div>
-      <h4>Enquiry Submitted!</h4>
-      <p>Thank you for reaching out to Asian Business School. Our admissions counselor will contact you shortly with course brochures and fee details.</p>
-    </div>
-  </div>
-</section>
 
-<!-- Facts inner -->
-<div class="facts">
-  <div class="facts-inner">
-    <div class="fact"><div class="fact-icon">⏱</div><div class="fact-val">2 Years</div><div class="fact-label">Duration</div></div>
-    <div class="fact"><div class="fact-icon">🎓</div><div class="fact-val">AICTE · NBA</div><div class="fact-label">Accreditation</div></div>
-    <div class="fact"><div class="fact-icon">₹</div><div class="fact-val">~9.5 Lakhs</div><div class="fact-label">Total Fee</div></div>
-    <div class="fact"><div class="fact-icon">💼</div><div class="fact-val">HR Leadership</div><div class="fact-label">Career Focus</div></div>
-    <div class="fact"><div class="fact-icon">🏫</div><div class="fact-val">Full-time</div><div class="fact-label">Mode</div></div>
-  </div>
-</div>
-
-<!-- Program Overview -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Program Overview</div>
-    <h2>Shaping HR leaders for a people-first world</h2>
-  </div>
-  <div class="overview-grid">
-    <div>
-      <p>Organizations today are increasingly focused on holistic workforce management, employee engagement, and the adoption of HR technology. The role of HR professionals has gained greater significance across industries.</p>
-      <blockquote>
-        "Train people well enough so they can leave. Treat them well enough so they don't want to."
-        <cite>— Sir Richard Branson</cite>
-      </blockquote>
-      <p>The PGDM at ABS equips future HR leaders with advanced knowledge, practical tools, and cross-cultural sensitivity — covering Organizational Behaviour, HR Metrics & Analytics, Rewards & Performance Management, Labour Laws, International HRM and Change Management, delivered through case studies, simulations, live projects and industry guest sessions. <a href="#" style="color:var(--maroon); font-weight:600; display: inline-flex; align-items:center; gap: 4px;">Read full overview →</a></p>
-    </div>
-    <div class="capabilities">
-      <h3>Capabilities you'll build</h3>
-      <ul>
-        <li>Global mindset with cultural sensitivity</li>
-        <li>Managing diversity of thought and action</li>
-        <li>Technology-driven HR interventions</li>
-        <li>Driving innovation in people practices</li>
-        <li>Navigating uncertainty and complexity</li>
-        <li>Strong professional networking skills</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- 6 Key Specializations Section -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Curriculum</div>
-    <h2>6 Key Specializations</h2>
-    <p>Discover the core academic pathways tailored to build global strategic HR leaders.</p>
-  </div>
-  
-  <div class="spec-accordion-grid">
-    <div class="spec-accordion-column">
-      
-      <div class="spec-item active">
-        <div class="spec-header" onclick="toggleHeroAccordion(this)">
-          <h4>International Human Resource Management</h4>
-          <span class="spec-icon">▼</span>
+    <div class="hero-form-wrapper">
+      <h3>Apply Now</h3>
+      <div class="subtitle">Admissions Open for Batch 2026-28</div>
+      <form id="heroLeadForm" onsubmit="handleHeroFormSubmit(event)">
+        <div class="form-group-hero">
+          <input type="text" class="form-control-hero" id="heroFullName" placeholder="Full Name" required>
         </div>
-        <div class="spec-content" style="max-height: 120px;">
-          <div class="spec-content-inner">
-            Equips future HR professionals to manage diverse global teams, navigate cross-cultural workplace complexities, and implement strategic international recruitment, compliance, and compensation policies across multinational organizations.
-          </div>
+        <div class="form-group-hero">
+          <input type="email" class="form-control-hero" id="heroEmailAddr" placeholder="Email Address" required>
         </div>
-      </div>
-      
-      <div class="spec-item">
-        <div class="spec-header" onclick="toggleHeroAccordion(this)">
-          <h4>Industrial Relations & Labour Laws</h4>
-          <span class="spec-icon">▼</span>
+        <div class="form-group-hero">
+          <input type="tel" class="form-control-hero" id="heroMobileNo" pattern="[0-9]{10}"
+            placeholder="10-Digit Mobile Number" required>
         </div>
-        <div class="spec-content">
-          <div class="spec-content-inner">
-            Offers comprehensive insights into employee relations, trade unions, dispute resolution, and legal compliance frameworks. Focuses on bridging industrial gaps and maintaining a harmonious, legally compliant working environment.
-          </div>
-        </div>
-      </div>
-
-      <div class="spec-item">
-        <div class="spec-header" onclick="toggleHeroAccordion(this)">
-          <h4>Human Resource Development</h4>
-          <span class="spec-icon">▼</span>
-        </div>
-        <div class="spec-content">
-          <div class="spec-content-inner">
-            Focuses on strategic talent development, employee training programs, performance coaching, and learning methodologies. Prepares professionals to unlock workforce potential and drive continuous organizational learning and growth.
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    
-    <div class="spec-accordion-column">
-      
-      <div class="spec-item">
-        <div class="spec-header" onclick="toggleHeroAccordion(this)">
-          <h4>Organizational Change & Development</h4>
-          <span class="spec-icon">▼</span>
-        </div>
-        <div class="spec-content">
-          <div class="spec-content-inner">
-            Prepares leaders to guide businesses through structural transformations, mergers, and cultural shifts. Teaches OD diagnostics, intervention techniques, and strategies to build resilient, agile corporate cultures.
-          </div>
-        </div>
-      </div>
-
-      <div class="spec-item">
-        <div class="spec-header" onclick="toggleHeroAccordion(this)">
-          <h4>HR Metrics & Analytics</h4>
-          <span class="spec-icon">▼</span>
-        </div>
-        <div class="spec-content">
-          <div class="spec-content-inner">
-            Empowers managers to utilize workforce data for predictive analytics, performance mapping, and strategic business decisions. Focuses on data-driven HR metrics that optimize talent acquisition and employee retention.
-          </div>
-        </div>
-      </div>
-
-      <div class="spec-item">
-        <div class="spec-header" onclick="toggleHeroAccordion(this)">
-          <h4>Performance Management & Compensation</h4>
-          <span class="spec-icon">▼</span>
-        </div>
-        <div class="spec-content">
-          <div class="spec-content-inner">
-            Covers strategic design of appraisal systems, performance rewards, employee benefits, and competitive compensation architectures. Focuses on aligning individual performance outcomes with overarching business growth strategies.
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<!-- Admissions Fee & Eligibility Section -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Admissions</div>
-    <h2>Fee structure & eligibility</h2>
-  </div>
-  <div class="fee-grid">
-    <div class="fee-card">
-      <h3>💰 Fee Details</h3>
-      <div class="fee-highlight">₹9.5 Lakhs</div>
-      <p>Approximate total academic fee payable in standard term-wise installments.</p>
-      <ul>
-        <li>Flexible installment plans</li>
-        <li>Education loan assistance</li>
-        <li>Merit-based scholarships available</li>
-      </ul>
-    </div>
-    <div class="fee-card featured">
-      <h3>⚡ Premium EMI Options</h3>
-      <div class="fee-highlight">₹18,500<span style="font-size:16px; font-weight:normal">/mo*</span></div>
-      <p>Avail easy, interest-free financing options through leading student finance partners.</p>
-      <ul>
-        <li><strong>0% Interest EMI</strong> options</li>
-        <li>Instant approval within 24 hours</li>
-        <li>Partners: GrayQuest, Propelld, HDFC</li>
-        <li>Minimal document processing</li>
-      </ul>
-      <button class="btn-primary" style="margin-top:auto; font-size:13px; padding:10px;" onclick="openLeadModal('EMI Calculator Details')">Check Loan Eligibility</button>
-    </div>
-    <div class="fee-card">
-      <h3>📋 Eligibility Criteria</h3>
-      <div class="fee-highlight" style="font-size:24px; margin-top:20px; margin-bottom:20px; line-height:1.2; color:var(--maroon-dark);">Graduation (50%+)</div>
-      <p>Bachelor's degree from any recognized university (final-year students may also apply subject to proof of completion).</p>
-      <p style="margin-top:12px;"><strong>Exam Accepted:</strong> CAT / MAT / XAT / CMAT / ATMA / GMAT / ABSAT.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Why ABS Section -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Why ABS</div>
-    <h2>Built for HR careers, not just HR theory</h2>
-    <p style="margin-top:12px;color:var(--ink-soft);max-width:900px; font-size: 15.5px; line-height:1.7;">
-      Asian Business School equips future leaders with industry-aligned learning, expert faculty, and global exposure at Oxford. Our experiential pedagogy integrates live projects, leadership bootcamps, and executive mentorship, ensuring students master core competencies. Graduates emerge with the practical expertise and strategic capabilities required to accelerate their careers in top-tier corporate environments.
-    </p>
-  </div>
-  <div class="usp-grid">
-    <div class="usp-card">
-      <div class="usp-icon">★</div>
-      <div class="usp-title">Expert Faculty</div>
-      <div class="usp-desc">Learn from experienced industry practitioners and leading academic mentors.</div>
-    </div>
-    <div class="usp-card">
-      <div class="usp-icon">🏢</div>
-      <div class="usp-title">Smart Campus</div>
-      <div class="usp-desc">High-tech classes, well-stocked libraries, and incubation labs.</div>
-    </div>
-    <div class="usp-card">
-      <div class="usp-icon">💡</div>
-      <div class="usp-title">Experiential Learning</div>
-      <div class="usp-desc">Gain edge via simulation bootcamps, case studies, and live projects.</div>
-    </div>
-    <div class="usp-card">
-      <div class="usp-icon">🌍</div>
-      <div class="usp-title">Global Exposure</div>
-      <div class="usp-desc">Includes studies and corporate visits at Oxford Business College, UK.</div>
-    </div>
-  </div>
-</section>
-
-<!-- Faculty Section -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Faculty Profile</div>
-    <h2>Learn from the best minds in the industry</h2>
-  </div>
-  <div class="faculty-grid">
-    <div class="faculty-card">
-      <div class="faculty-avatar">
-        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=120&h=120" alt="Dr. Rajesh Sharma">
-      </div>
-      <div class="faculty-name">Dr. Rajesh Sharma</div>
-      <div class="faculty-role">Professor - HR Analytics</div>
-      <div class="faculty-desc">20+ years of corporate & academic experience leading human capital research projects.</div>
-    </div>
-    <div class="faculty-card">
-      <div class="faculty-avatar">
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=120&h=120" alt="Dr. Neha Gupta">
-      </div>
-      <div class="faculty-name">Dr. Neha Gupta</div>
-      <div class="faculty-role">Associate Professor</div>
-      <div class="faculty-desc">Specializes in Organizational Behaviour, workspace psychology, and cultural transformation.</div>
-    </div>
-    <div class="faculty-card">
-      <div class="faculty-avatar">
-        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=120&h=120" alt="Dr. Amit Verma">
-      </div>
-      <div class="faculty-name">Dr. Amit Verma</div>
-      <div class="faculty-role">Professor - Industrial Relations</div>
-      <div class="faculty-desc">Expert in complex labour legislation, dispute settlements, and trade union negotiations.</div>
-    </div>
-    <div class="faculty-card">
-      <div class="faculty-avatar">
-        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=120&h=120" alt="Dr. Priya Kapoor">
-      </div>
-      <div class="faculty-name">Dr. Priya Kapoor</div>
-      <div class="faculty-role">Assistant Professor</div>
-      <div class="faculty-desc">Focuses on strategic talent acquisition, recruitment marketing, and retention systems.</div>
-    </div>
-  </div>
-</section>
-
-<!-- Career Support Services -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Career Support</div>
-    <h2>Placement Support Services</h2>
-  </div>
-  <div class="subject-grid">
-    <div class="subject-card">
-      <div class="subject-card-icon">📝</div>
-      <div class="subject-name">Resume Building Workshops</div>
-    </div>
-    <div class="subject-card">
-      <div class="subject-card-icon">👥</div>
-      <div class="subject-name">Mock Interviews with Industry HRs</div>
-    </div>
-    <div class="subject-card">
-      <div class="subject-card-icon">🔗</div>
-      <div class="subject-name">LinkedIn Profile Optimisation</div>
-    </div>
-    <div class="subject-card">
-      <div class="subject-card-icon">👨‍🏫</div>
-      <div class="subject-name">1-on-1 Industry Mentorship</div>
-    </div>
-    <div class="subject-card">
-      <div class="subject-card-icon">💼</div>
-      <div class="subject-name">Assured Internship Assistance</div>
-    </div>
-    <div class="subject-card">
-      <div class="subject-card-icon">🎯</div>
-      <div class="subject-name">Personalized Career Counselling</div>
-    </div>
-  </div>
-</section>
-
-<!-- Job Roles -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Career Paths</div>
-    <h2>Job opportunities in HRM</h2>
-  </div>
-  <div class="subject-grid">
-    <div class="subject-card">
-      <div class="subject-card-icon">🤝</div>
-      <div class="subject-name">HR Business Partner (HRBP)</div>
-    </div>
-    <div class="subject-card">
-      <div class="subject-card-icon">🔍</div>
-      <div class="subject-name">Talent Acquisition Specialist</div>
-    </div>
-    <div class="subject-card">
-      <div class="subject-card-icon">📈</div>
-      <div class="subject-name">Learning & Development Manager</div>
-    </div>
-    <div class="subject-card">
-      <div class="subject-card-icon">🛡️</div>
-      <div class="subject-name">Employee Relations Manager</div>
-    </div>
-    <div class="subject-card">
-      <div class="subject-card-icon">📊</div>
-      <div class="subject-name">HR Analytics Specialist</div>
-    </div>
-    <div class="subject-card">
-      <div class="subject-card-icon">💎</div>
-      <div class="subject-name">Compensation & Benefits Analyst</div>
-    </div>
-  </div>
-</section>
-
-<!-- Meets the Toppers -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Student Success</div>
-    <h2>Meet our toppers</h2>
-  </div>
-  <div class="student-toppers-grid">
-    <div class="topper-card">
-      <div class="topper-img">
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=120&h=120" alt="Anjali Sharma">
-      </div>
-      <div class="topper-details">
-        <p class="topper-quote">"ABS's rigorous PGDM curriculum, particularly the hands-on case studies and mentorship program, shaped my approach towards business problem solving. I got placed before my final exams."</p>
-        <div class="name">Anjali Sharma</div>
-        <div class="role">Batch 2024 — Placed at Deloitte</div>
-        <div class="pkg">Package: 12.0 LPA</div>
-      </div>
-    </div>
-    <div class="topper-card">
-      <div class="topper-img">
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120" alt="Rahul Khanna">
-      </div>
-      <div class="topper-details">
-        <p class="topper-quote">"The global exposure at Oxford combined with the intensive training in HR Analytics gave me the tools needed to crack challenging corporate interviews with complete confidence."</p>
-        <div class="name">Rahul Khanna</div>
-        <div class="role">Batch 2024 — Placed at EY</div>
-        <div class="pkg">Package: 11.5 LPA</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Placement Stats Section -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Outcomes</div>
-    <h2>Placements & recruiter details</h2>
-  </div>
-  <div class="placement-band">
-    <div class="placement-stat">
-      <div class="num">18.0 LPA</div>
-      <div class="label">Highest CTC</div>
-    </div>
-    <div class="placement-stat">
-      <div class="num">7.5 LPA</div>
-      <div class="label">Average CTC</div>
-    </div>
-    <div class="placement-stat">
-      <div class="num">500+</div>
-      <div class="label">Recruiting Partners</div>
-    </div>
-  </div>
-</section>
-
-<!-- Hiring Partners Marquee -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Hiring Partners</div>
-    <h2>Recruiters who trust ABS talent</h2>
-  </div>
-  <div class="partners-strip">
-    <div class="partners-track">
-      <div class="partner-logo">Deloitte</div>
-      <div class="partner-logo">EY (Ernst & Young)</div>
-      <div class="partner-logo">KPMG</div>
-      <div class="partner-logo">PwC</div>
-      <div class="partner-logo">Amazon</div>
-      <div class="partner-logo">ICICI Bank</div>
-      <div class="partner-logo">HDFC Bank</div>
-      <div class="partner-logo">Mercer</div>
-      <div class="partner-logo">Wipro</div>
-      <div class="partner-logo">Deloitte</div>
-      <div class="partner-logo">EY (Ernst & Young)</div>
-      <div class="partner-logo">KPMG</div>
-      <div class="partner-logo">PwC</div>
-      <div class="partner-logo">Amazon</div>
-      <div class="partner-logo">ICICI Bank</div>
-      <div class="partner-logo">HDFC Bank</div>
-      <div class="partner-logo">Mercer</div>
-      <div class="partner-logo">Wipro</div>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials Carousel -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Student Voices</div>
-    <h2>Alumni Testimonials</h2>
-  </div>
-  <div class="carousel-arrows">
-    <button class="carousel-arrow" onclick="scrollCarousel('testCarousel',-1)" aria-label="Previous">‹</button>
-    <button class="carousel-arrow" onclick="scrollCarousel('testCarousel',1)" aria-label="Next">›</button>
-  </div>
-  <div class="carousel-wrapper">
-    <div class="carousel-track" id="testCarousel">
-      <div class="testimonial">
-        <div class="avatar">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100&h=100" alt="Alumni portrait">
-        </div>
-        <div>
-          <p>"The HR analytics and live-project exposure at ABS gave me real confidence walking into interviews. The placement cell is incredibly active and supportive throughout."</p>
-          <div class="name">Ritu Sen</div>
-          <div class="role">PGDM HR, Batch 2023 — Placed at KPMG as HRBP</div>
-        </div>
-      </div>
-      <div class="testimonial">
-        <div class="avatar">
-          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=100&h=100" alt="Alumni portrait">
-        </div>
-        <div>
-          <p>"Faculty mentorship and corporate networking sessions reshaped how I approach employee relations today. ABS truly bridges theory and real-world execution."</p>
-          <div class="name">Prateek Kumar</div>
-          <div class="role">PGDM HR, Batch 2023 — Placed at Wipro as Talent Manager</div>
-        </div>
-      </div>
-      <div class="testimonial">
-        <div class="avatar">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100&h=100" alt="Alumni portrait">
-        </div>
-        <div>
-          <p>"Case studies heavy pedagogy and continuous feedback programs made my corporate shift very smooth. Proud to be an ABS alumnus."</p>
-          <div class="name">Aisha Mehta</div>
-          <div class="role">PGDM HR, Batch 2022 — Placed at Amazon as HR Generalist</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Blog Section -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Insights</div>
-    <h2>From the ABS blog</h2>
-  </div>
-  <div class="carousel-arrows">
-    <button class="carousel-arrow" onclick="scrollCarousel('blogCarousel',-1)" aria-label="Previous">‹</button>
-    <button class="carousel-arrow" onclick="scrollCarousel('blogCarousel',1)" aria-label="Next">›</button>
-  </div>
-  <div class="blog-track" id="blogCarousel">
-    <div class="blog-card">
-      <div class="blog-thumb">
-        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=260&h=140" alt="HR Analytics Blog">
-      </div>
-      <div class="blog-body">
-        <div class="blog-date">12 Jun 2026</div>
-        <div class="blog-title">Why HR analytics is the fastest-growing specialization in corporate fields</div>
-        <a href="#" class="blog-link" onclick="openLeadModal('Blog Link 1'); return false;">Read more →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <div class="blog-thumb">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=260&h=140" alt="PGDM vs MBA Blog">
-      </div>
-      <div class="blog-body">
-        <div class="blog-date">28 May 2026</div>
-        <div class="blog-title">PGDM vs MBA in Human Resource Management — What is the key difference?</div>
-        <a href="#" class="blog-link" onclick="openLeadModal('Blog Link 2'); return false;">Read more →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <div class="blog-thumb">
-        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=260&h=140" alt="HR Careers Blog">
-      </div>
-      <div class="blog-body">
-        <div class="blog-date">14 May 2026</div>
-        <div class="blog-title">Top HR career paths you can target after securing your PGDM degree</div>
-        <a href="#" class="blog-link" onclick="openLeadModal('Blog Link 3'); return false;">Read more →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <div class="blog-thumb">
-        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=260&h=140" alt="Placement Blog">
-      </div>
-      <div class="blog-body">
-        <div class="blog-date">2 May 2026</div>
-        <div class="blog-title">How ABS students prepare and secure placement at leading recruiters</div>
-        <a href="#" class="blog-link" onclick="openLeadModal('Blog Link 4'); return false;">Read more →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Admission Process Steps -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">Admission Process</div>
-    <h2>Four steps to secure admission</h2>
-  </div>
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-title">Apply Online & Submit entrance scorecard</div>
-    </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-title">Initial shortlisting for Selection Rounds</div>
-    </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-title">Personal Interview & Document review</div>
-    </div>
-    <div class="step">
-      <div class="step-num">4</div>
-      <div class="step-title">Selection Letter & Admission registration</div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQs Section -->
-<section class="block">
-  <div class="section-head">
-    <div class="section-eyebrow">FAQs</div>
-    <h2>Frequently asked questions</h2>
-  </div>
-  <div class="faq-list">
-    <div class="faq-item open">
-      <div class="faq-q" onclick="toggleFaq(this)">What is PGDM in Human Resource Management? <span class="faq-icon">+</span></div>
-      <div class="faq-a" style="max-height: 150px;">
-        <div class="faq-a-inner">
-          A specialized 2-year postgraduate program designed to build core competencies in strategic human capital development, staffing, performance appraisal systems, HR Analytics, employee relations, and labour policies.
-        </div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">What is the duration and structure of the program? <span class="faq-icon">+</span></div>
-      <div class="faq-a">
-        <div class="faq-a-inner">
-          It is a full-time, 2-year residential program divided into four semesters. The pedagogy comprises classroom instruction, simulation exercises, live internships, and an international learning trip.
-        </div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">What details are available for installment payments & loans? <span class="faq-icon">+</span></div>
-      <div class="faq-a">
-        <div class="faq-a-inner">
-          The base academic fee is ₹9.5 Lakhs. We offer flexible term payments and zero-cost EMI financing plans in partnership with top student loan agencies starting at ₹18,500/month.
-        </div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Is this PGDM program valid and accredited? <span class="faq-icon">+</span></div>
-      <div class="faq-a">
-        <div class="faq-a-inner">
-          Yes. The program is fully approved by the AICTE, accredited by the NBA, and certified by the Association of Indian Universities (AIU) as equivalent to an MBA degree.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Floating Sticky CTA -->
-<div class="sticky-cta">
-  <div class="left">Admissions open for 2026-28 batch — <b>apply before seats close</b></div>
-  <div class="actions">
-    <button class="btn-secondary" onclick="openLeadModal('Sticky Download Brochure')">Download Brochure</button>
-    <button class="btn-primary" onclick="openLeadModal('Sticky Apply Now')">Apply Now</button>
-  </div>
-</div>
-
-<!-- Global lead capture modal -->
-<div class="modal-overlay" id="leadModal">
-  <div class="modal-container">
-    <button class="modal-close" onclick="closeLeadModal()">×</button>
-    <div class="modal-header">
-      <h3>Asian Business School</h3>
-      <p id="modalSource">Application & Enquiry Form 2026</p>
-    </div>
-    <div class="modal-body" id="modalFormContainer">
-      <form id="leadCaptureForm" onsubmit="handleFormSubmit(event)">
-        <input type="hidden" id="formTriggerSource" name="triggerSource" value="General">
-        <div class="form-group">
-          <label for="fullName">Full Name</label>
-          <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
-        </div>
-        <div class="form-group">
-          <label for="emailAddr">Email Address</label>
-          <input type="email" id="emailAddr" class="form-control" placeholder="Enter your email address" required>
-        </div>
-        <div class="form-group">
-          <label for="mobileNo">Mobile Number</label>
-          <input type="tel" id="mobileNo" class="form-control" pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number" required>
-        </div>
-        <div class="form-group">
-          <label for="courseSelect">Program Course</label>
-          <select id="courseSelect" class="form-control" required>
-            <option value="PGDM-HRM" selected>PGDM in Human Resource Management (Equivalent to MBA)</option>
+        <div class="form-group-hero">
+          <select class="form-control-hero" id="heroCourseSelect" required>
+            <option value="PGDM-HRM" selected>PGDM in Human Resource Management</option>
             <option value="PGDM-General">PGDM - General</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="citySelect">State / City</label>
-          <input type="text" id="citySelect" class="form-control" placeholder="Enter your city/state" required>
+        <div class="form-group-hero">
+          <input type="text" class="form-control-hero" id="heroCitySelect" placeholder="State / City" required>
         </div>
-        <button type="submit">Submit Application</button>
+        <button type="submit" class="btn-submit-hero">Submit Application</button>
       </form>
+      <div class="success-content-hero" id="heroFormSuccess" style="display:none;">
+        <div class="success-icon-hero">✓</div>
+        <h4>Enquiry Submitted!</h4>
+        <p>Thank you for reaching out to Asian Business School. Our admissions counselor will contact you shortly with
+          course brochures and fee details.</p>
+      </div>
     </div>
-    <!-- Success Screen Content -->
-    <div class="success-content" id="modalSuccessContainer">
-      <div class="success-icon">✓</div>
-      <h3>Enquiry Submitted!</h3>
-      <p>Thank you for reaching out to Asian Business School. Our senior admissions counselor will contact you shortly on your provided mobile number and email with the prospectus and fee schedule details.</p>
-      <button class="btn-primary" onclick="closeLeadModal()">Done</button>
+  </section>
+
+  <!-- Facts inner -->
+  <div class="facts">
+    <div class="facts-inner">
+      <div class="fact">
+        <div class="fact-icon">⏱</div>
+        <div class="fact-val">2 Years</div>
+        <div class="fact-label">Duration</div>
+      </div>
+      <div class="fact">
+        <div class="fact-icon">🎓</div>
+        <div class="fact-val">AICTE · NBA</div>
+        <div class="fact-label">Accreditation</div>
+      </div>
+      <div class="fact">
+        <div class="fact-icon">₹</div>
+        <div class="fact-val">~9.5 Lakhs</div>
+        <div class="fact-label">Total Fee</div>
+      </div>
+      <div class="fact">
+        <div class="fact-icon">💼</div>
+        <div class="fact-val">HR Leadership</div>
+        <div class="fact-label">Career Focus</div>
+      </div>
+      <div class="fact">
+        <div class="fact-icon">🏫</div>
+        <div class="fact-val">Full-time</div>
+        <div class="fact-label">Mode</div>
+      </div>
     </div>
   </div>
-</div>
 
-<footer>
-  Asian Business School, Plot A2, Block A, Sector 125, Noida — 201303, Delhi NCR &nbsp;|&nbsp; <b>Layout preview only</b> — Not affiliated content, for design review evaluation.
-</footer>
+  <!-- Program Overview -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Program Overview</div>
+      <h2>Shaping HR leaders for a people-first world</h2>
+    </div>
+    <div class="overview-grid">
+      <div>
+        <p>Organizations today are increasingly focused on holistic workforce management, employee engagement, and the
+          adoption of HR technology. The role of HR professionals has gained greater significance across industries.</p>
+        <blockquote>
+          "Train people well enough so they can leave. Treat them well enough so they don't want to."
+          <cite>— Sir Richard Branson</cite>
+        </blockquote>
+        <p>The PGDM at ABS equips future HR leaders with advanced knowledge, practical tools, and cross-cultural
+          sensitivity — covering Organizational Behaviour, HR Metrics & Analytics, Rewards & Performance Management,
+          Labour Laws, International HRM and Change Management, delivered through case studies, simulations, live
+          projects and industry guest sessions. <a href="#"
+            style="color:var(--maroon); font-weight:600; display: inline-flex; align-items:center; gap: 4px;">Read full
+            overview →</a></p>
+      </div>
+      <div class="capabilities">
+        <h3>Capabilities you'll build</h3>
+        <ul>
+          <li>Global mindset with cultural sensitivity</li>
+          <li>Managing diversity of thought and action</li>
+          <li>Technology-driven HR interventions</li>
+          <li>Driving innovation in people practices</li>
+          <li>Navigating uncertainty and complexity</li>
+          <li>Strong professional networking skills</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<script>
-// Toggle Hero Specializations Accordion
-function toggleHeroAccordion(element) {
-  const item = element.parentElement;
-  const isActive = item.classList.contains('active');
-  
-  // Collapse all accordion items
-  const allItems = document.querySelectorAll('.spec-item');
-  allItems.forEach(i => {
-    i.classList.remove('active');
-    i.querySelector('.spec-content').style.maxHeight = null;
-  });
-  
-  // Expand clicked if it was not active
-  if (!isActive) {
-    item.classList.add('active');
-    const content = item.querySelector('.spec-content');
-    content.style.maxHeight = content.scrollHeight + "px";
-  }
-}
+  <!-- 6 Key Specializations Section -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Curriculum</div>
+      <h2>6 Key Specializations</h2>
+      <p>Discover the core academic pathways tailored to build global strategic HR leaders.</p>
+    </div>
 
-// Toggle FAQ Accordions
-function toggleFaq(element) {
-  const item = element.parentElement;
-  const isActive = item.classList.contains('open');
-  
-  // Collapse all FAQs
-  const allItems = document.querySelectorAll('.faq-item');
-  allItems.forEach(i => {
-    i.classList.remove('open');
-    i.querySelector('.faq-a').style.maxHeight = null;
-  });
-  
-  // Expand clicked if it was not active
-  if (!isActive) {
-    item.classList.add('open');
-    const content = item.querySelector('.faq-a');
-    content.style.maxHeight = content.scrollHeight + "px";
-  }
-}
+    <div class="spec-accordion-grid">
+      <div class="spec-accordion-column">
 
-// Carousel Scroll helper
-function scrollCarousel(id, dir) {
-  const el = document.getElementById(id);
-  const step = el.clientWidth * 0.85;
-  el.scrollBy({left: dir * step, behavior: 'smooth'});
-}
+        <div class="spec-item active">
+          <div class="spec-header" onclick="toggleHeroAccordion(this)">
+            <h4>International Human Resource Management</h4>
+            <span class="spec-icon">▼</span>
+          </div>
+          <div class="spec-content" style="max-height: 120px;">
+            <div class="spec-content-inner">
+              Equips future HR professionals to manage diverse global teams, navigate cross-cultural workplace
+              complexities, and implement strategic international recruitment, compliance, and compensation policies
+              across multinational organizations.
+            </div>
+          </div>
+        </div>
 
-// Lead Popup Modal management
-const modalOverlay = document.getElementById('leadModal');
-const modalFormContainer = document.getElementById('modalFormContainer');
-const modalSuccessContainer = document.getElementById('modalSuccessContainer');
-const formTriggerSource = document.getElementById('formTriggerSource');
-const modalSourceLabel = document.getElementById('modalSource');
+        <div class="spec-item">
+          <div class="spec-header" onclick="toggleHeroAccordion(this)">
+            <h4>Industrial Relations & Labour Laws</h4>
+            <span class="spec-icon">▼</span>
+          </div>
+          <div class="spec-content">
+            <div class="spec-content-inner">
+              Offers comprehensive insights into employee relations, trade unions, dispute resolution, and legal
+              compliance frameworks. Focuses on bridging industrial gaps and maintaining a harmonious, legally compliant
+              working environment.
+            </div>
+          </div>
+        </div>
 
-function openLeadModal(source) {
-  formTriggerSource.value = source;
-  modalSourceLabel.innerText = "Application Enquiry (" + source + ")";
-  
-  // Reset form and screen states
-  document.getElementById('leadCaptureForm').reset();
-  modalFormContainer.style.display = 'block';
-  modalSuccessContainer.style.display = 'none';
-  
-  // Activate overlay
-  modalOverlay.classList.add('active');
-}
+        <div class="spec-item">
+          <div class="spec-header" onclick="toggleHeroAccordion(this)">
+            <h4>Human Resource Development</h4>
+            <span class="spec-icon">▼</span>
+          </div>
+          <div class="spec-content">
+            <div class="spec-content-inner">
+              Focuses on strategic talent development, employee training programs, performance coaching, and learning
+              methodologies. Prepares professionals to unlock workforce potential and drive continuous organizational
+              learning and growth.
+            </div>
+          </div>
+        </div>
 
-function closeLeadModal() {
-  modalOverlay.classList.remove('active');
-}
+      </div>
 
-// Close modal when clicking outside container
-modalOverlay.addEventListener('click', function(e) {
-  if (e.target === modalOverlay) {
-    closeLeadModal();
-  }
-});
+      <div class="spec-accordion-column">
 
-// Form Submission Handler
-function handleFormSubmit(event) {
-  event.preventDefault();
-  
-  // Visual Feedback of Submission
-  const submitBtn = event.target.querySelector('button[type="submit"]');
-  const originalText = submitBtn.innerText;
-  submitBtn.innerText = 'Processing...';
-  submitBtn.disabled = true;
-  
-  setTimeout(() => {
-    submitBtn.innerText = originalText;
-    submitBtn.disabled = false;
-    
-    // Switch to success screen
-    modalFormContainer.style.display = 'none';
-    modalSuccessContainer.style.display = 'block';
-  }, 1000);
-}
+        <div class="spec-item">
+          <div class="spec-header" onclick="toggleHeroAccordion(this)">
+            <h4>Organizational Change & Development</h4>
+            <span class="spec-icon">▼</span>
+          </div>
+          <div class="spec-content">
+            <div class="spec-content-inner">
+              Prepares leaders to guide businesses through structural transformations, mergers, and cultural shifts.
+              Teaches OD diagnostics, intervention techniques, and strategies to build resilient, agile corporate
+              cultures.
+            </div>
+          </div>
+        </div>
 
-// Hero Form Submission Handler
-function handleHeroFormSubmit(event) {
-  event.preventDefault();
-  
-  const form = document.getElementById('heroLeadForm');
-  const successContainer = document.getElementById('heroFormSuccess');
-  const submitBtn = form.querySelector('button[type="submit"]');
-  const originalText = submitBtn.innerText;
-  
-  submitBtn.innerText = 'Processing...';
-  submitBtn.disabled = true;
-  
-  setTimeout(() => {
-    submitBtn.innerText = originalText;
-    submitBtn.disabled = false;
-    
-    // Hide form and show success state
-    form.style.display = 'none';
-    successContainer.style.display = 'block';
-  }, 1000);
-}
-</script>
+        <div class="spec-item">
+          <div class="spec-header" onclick="toggleHeroAccordion(this)">
+            <h4>HR Metrics & Analytics</h4>
+            <span class="spec-icon">▼</span>
+          </div>
+          <div class="spec-content">
+            <div class="spec-content-inner">
+              Empowers managers to utilize workforce data for predictive analytics, performance mapping, and strategic
+              business decisions. Focuses on data-driven HR metrics that optimize talent acquisition and employee
+              retention.
+            </div>
+          </div>
+        </div>
+
+        <div class="spec-item">
+          <div class="spec-header" onclick="toggleHeroAccordion(this)">
+            <h4>Performance Management & Compensation</h4>
+            <span class="spec-icon">▼</span>
+          </div>
+          <div class="spec-content">
+            <div class="spec-content-inner">
+              Covers strategic design of appraisal systems, performance rewards, employee benefits, and competitive
+              compensation architectures. Focuses on aligning individual performance outcomes with overarching business
+              growth strategies.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions Fee & Eligibility Section -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Admissions</div>
+      <h2>Fee structure & eligibility</h2>
+    </div>
+    <div class="fee-grid">
+      <div class="fee-card">
+        <h3>💰 Fee Details</h3>
+        <div class="fee-highlight">₹9.5 Lakhs</div>
+        <p>Approximate total academic fee payable in standard term-wise installments.</p>
+        <ul>
+          <li>Flexible installment plans</li>
+          <li>Education loan assistance</li>
+          <li>Merit-based scholarships available</li>
+        </ul>
+      </div>
+      <div class="fee-card featured">
+        <h3>⚡ Premium EMI Options</h3>
+        <div class="fee-highlight">₹18,500<span style="font-size:16px; font-weight:normal">/mo*</span></div>
+        <p>Avail easy, interest-free financing options through leading student finance partners.</p>
+        <ul>
+          <li><strong>0% Interest EMI</strong> options</li>
+          <li>Instant approval within 24 hours</li>
+          <li>Partners: GrayQuest, Propelld, HDFC</li>
+          <li>Minimal document processing</li>
+        </ul>
+        <button class="btn-primary" style="margin-top:auto; font-size:13px; padding:10px;"
+          onclick="openLeadModal('EMI Calculator Details')">Check Loan Eligibility</button>
+      </div>
+      <div class="fee-card">
+        <h3>📋 Eligibility Criteria</h3>
+        <div class="fee-highlight"
+          style="font-size:24px; margin-top:20px; margin-bottom:20px; line-height:1.2; color:var(--maroon-dark);">
+          Graduation (50%+)</div>
+        <p>Bachelor's degree from any recognized university (final-year students may also apply subject to proof of
+          completion).</p>
+        <p style="margin-top:12px;"><strong>Exam Accepted:</strong> CAT / MAT / XAT / CMAT / ATMA / GMAT / ABSAT.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why ABS Section -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Why ABS</div>
+      <h2>Built for HR careers, not just HR theory</h2>
+      <p style="margin-top:12px;color:var(--ink-soft);max-width:900px; font-size: 15.5px; line-height:1.7;">
+        Asian Business School equips future leaders with industry-aligned learning, expert faculty, and global exposure
+        at Oxford. Our experiential pedagogy integrates live projects, leadership bootcamps, and executive mentorship,
+        ensuring students master core competencies. Graduates emerge with the practical expertise and strategic
+        capabilities required to accelerate their careers in top-tier corporate environments.
+      </p>
+    </div>
+    <div class="usp-grid">
+      <div class="usp-card">
+        <div class="usp-icon">★</div>
+        <div class="usp-title">Expert Faculty</div>
+        <div class="usp-desc">Learn from experienced industry practitioners and leading academic mentors.</div>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">🏢</div>
+        <div class="usp-title">Smart Campus</div>
+        <div class="usp-desc">High-tech classes, well-stocked libraries, and incubation labs.</div>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">💡</div>
+        <div class="usp-title">Experiential Learning</div>
+        <div class="usp-desc">Gain edge via simulation bootcamps, case studies, and live projects.</div>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">🌍</div>
+        <div class="usp-title">Global Exposure</div>
+        <div class="usp-desc">Includes studies and corporate visits at Oxford Business College, UK.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty Section -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Faculty Profile</div>
+      <h2>Learn from the best minds in the industry</h2>
+    </div>
+    <div class="faculty-grid">
+      <div class="faculty-card">
+        <div class="faculty-avatar">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=120&h=120"
+            alt="Dr. Rajesh Sharma">
+        </div>
+        <div class="faculty-name">Dr. Rajesh Sharma</div>
+        <div class="faculty-role">Professor - HR Analytics</div>
+        <div class="faculty-desc">20+ years of corporate & academic experience leading human capital research projects.
+        </div>
+      </div>
+      <div class="faculty-card">
+        <div class="faculty-avatar">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=120&h=120"
+            alt="Dr. Neha Gupta">
+        </div>
+        <div class="faculty-name">Dr. Neha Gupta</div>
+        <div class="faculty-role">Associate Professor</div>
+        <div class="faculty-desc">Specializes in Organizational Behaviour, workspace psychology, and cultural
+          transformation.</div>
+      </div>
+      <div class="faculty-card">
+        <div class="faculty-avatar">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=120&h=120"
+            alt="Dr. Amit Verma">
+        </div>
+        <div class="faculty-name">Dr. Amit Verma</div>
+        <div class="faculty-role">Professor - Industrial Relations</div>
+        <div class="faculty-desc">Expert in complex labour legislation, dispute settlements, and trade union
+          negotiations.</div>
+      </div>
+      <div class="faculty-card">
+        <div class="faculty-avatar">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=120&h=120"
+            alt="Dr. Priya Kapoor">
+        </div>
+        <div class="faculty-name">Dr. Priya Kapoor</div>
+        <div class="faculty-role">Assistant Professor</div>
+        <div class="faculty-desc">Focuses on strategic talent acquisition, recruitment marketing, and retention systems.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Support Services -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Career Support</div>
+      <h2>Placement Support Services</h2>
+    </div>
+    <div class="subject-grid">
+      <div class="subject-card">
+        <div class="subject-card-icon">📝</div>
+        <div class="subject-name">Resume Building Workshops</div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-icon">👥</div>
+        <div class="subject-name">Mock Interviews with Industry HRs</div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-icon">🔗</div>
+        <div class="subject-name">LinkedIn Profile Optimisation</div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-icon">👨‍🏫</div>
+        <div class="subject-name">1-on-1 Industry Mentorship</div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-icon">💼</div>
+        <div class="subject-name">Assured Internship Assistance</div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-icon">🎯</div>
+        <div class="subject-name">Personalized Career Counselling</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Job Roles -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Career Paths</div>
+      <h2>Job opportunities in HRM</h2>
+    </div>
+    <div class="subject-grid">
+      <div class="subject-card">
+        <div class="subject-card-icon">🤝</div>
+        <div class="subject-name">HR Business Partner (HRBP)</div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-icon">🔍</div>
+        <div class="subject-name">Talent Acquisition Specialist</div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-icon">📈</div>
+        <div class="subject-name">Learning & Development Manager</div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-icon">🛡️</div>
+        <div class="subject-name">Employee Relations Manager</div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-icon">📊</div>
+        <div class="subject-name">HR Analytics Specialist</div>
+      </div>
+      <div class="subject-card">
+        <div class="subject-card-icon">💎</div>
+        <div class="subject-name">Compensation & Benefits Analyst</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meets the Toppers -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Student Success</div>
+      <h2>Meet our toppers</h2>
+    </div>
+    <div class="student-toppers-grid">
+      <div class="topper-card">
+        <div class="topper-img">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=120&h=120"
+            alt="Anjali Sharma">
+        </div>
+        <div class="topper-details">
+          <p class="topper-quote">"ABS's rigorous PGDM curriculum, particularly the hands-on case studies and mentorship
+            program, shaped my approach towards business problem solving. I got placed before my final exams."</p>
+          <div class="name">Anjali Sharma</div>
+          <div class="role">Batch 2024 — Placed at Deloitte</div>
+          <div class="pkg">Package: 12.0 LPA</div>
+        </div>
+      </div>
+      <div class="topper-card">
+        <div class="topper-img">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120&h=120"
+            alt="Rahul Khanna">
+        </div>
+        <div class="topper-details">
+          <p class="topper-quote">"The global exposure at Oxford combined with the intensive training in HR Analytics
+            gave me the tools needed to crack challenging corporate interviews with complete confidence."</p>
+          <div class="name">Rahul Khanna</div>
+          <div class="role">Batch 2024 — Placed at EY</div>
+          <div class="pkg">Package: 11.5 LPA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placement Stats Section -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Outcomes</div>
+      <h2>Placements & recruiter details</h2>
+    </div>
+    <div class="placement-band">
+      <div class="placement-stat">
+        <div class="num">18.0 LPA</div>
+        <div class="label">Highest CTC</div>
+      </div>
+      <div class="placement-stat">
+        <div class="num">7.5 LPA</div>
+        <div class="label">Average CTC</div>
+      </div>
+      <div class="placement-stat">
+        <div class="num">500+</div>
+        <div class="label">Recruiting Partners</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hiring Partners Marquee -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Hiring Partners</div>
+      <h2>Recruiters who trust ABS talent</h2>
+    </div>
+    <div class="partners-strip">
+      <div class="partners-track">
+        <div class="partner-logo">Deloitte</div>
+        <div class="partner-logo">EY (Ernst & Young)</div>
+        <div class="partner-logo">KPMG</div>
+        <div class="partner-logo">PwC</div>
+        <div class="partner-logo">Amazon</div>
+        <div class="partner-logo">ICICI Bank</div>
+        <div class="partner-logo">HDFC Bank</div>
+        <div class="partner-logo">Mercer</div>
+        <div class="partner-logo">Wipro</div>
+        <div class="partner-logo">Deloitte</div>
+        <div class="partner-logo">EY (Ernst & Young)</div>
+        <div class="partner-logo">KPMG</div>
+        <div class="partner-logo">PwC</div>
+        <div class="partner-logo">Amazon</div>
+        <div class="partner-logo">ICICI Bank</div>
+        <div class="partner-logo">HDFC Bank</div>
+        <div class="partner-logo">Mercer</div>
+        <div class="partner-logo">Wipro</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Student Voices</div>
+      <h2>Alumni Testimonials</h2>
+    </div>
+    <div class="carousel-arrows">
+      <button class="carousel-arrow" onclick="scrollCarousel('testCarousel',-1)" aria-label="Previous">‹</button>
+      <button class="carousel-arrow" onclick="scrollCarousel('testCarousel',1)" aria-label="Next">›</button>
+    </div>
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="testCarousel">
+        <div class="testimonial">
+          <div class="avatar">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100&h=100"
+              alt="Alumni portrait">
+          </div>
+          <div>
+            <p>"The HR analytics and live-project exposure at ABS gave me real confidence walking into interviews. The
+              placement cell is incredibly active and supportive throughout."</p>
+            <div class="name">Ritu Sen</div>
+            <div class="role">PGDM HR, Batch 2023 — Placed at KPMG as HRBP</div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="avatar">
+            <img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=100&h=100"
+              alt="Alumni portrait">
+          </div>
+          <div>
+            <p>"Faculty mentorship and corporate networking sessions reshaped how I approach employee relations today.
+              ABS truly bridges theory and real-world execution."</p>
+            <div class="name">Prateek Kumar</div>
+            <div class="role">PGDM HR, Batch 2023 — Placed at Wipro as Talent Manager</div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="avatar">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=100&h=100"
+              alt="Alumni portrait">
+          </div>
+          <div>
+            <p>"Case studies heavy pedagogy and continuous feedback programs made my corporate shift very smooth. Proud
+              to be an ABS alumnus."</p>
+            <div class="name">Aisha Mehta</div>
+            <div class="role">PGDM HR, Batch 2022 — Placed at Amazon as HR Generalist</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Insights</div>
+      <h2>From the ABS blog</h2>
+    </div>
+    <div class="carousel-arrows">
+      <button class="carousel-arrow" onclick="scrollCarousel('blogCarousel',-1)" aria-label="Previous">‹</button>
+      <button class="carousel-arrow" onclick="scrollCarousel('blogCarousel',1)" aria-label="Next">›</button>
+    </div>
+    <div class="blog-track" id="blogCarousel">
+      <div class="blog-card">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=260&h=140"
+            alt="HR Analytics Blog">
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">12 Jun 2026</div>
+          <div class="blog-title">Why HR analytics is the fastest-growing specialization in corporate fields</div>
+          <a href="#" class="blog-link" onclick="openLeadModal('Blog Link 1'); return false;">Read more →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=260&h=140"
+            alt="PGDM vs MBA Blog">
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">28 May 2026</div>
+          <div class="blog-title">PGDM vs MBA in Human Resource Management — What is the key difference?</div>
+          <a href="#" class="blog-link" onclick="openLeadModal('Blog Link 2'); return false;">Read more →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=260&h=140"
+            alt="HR Careers Blog">
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">14 May 2026</div>
+          <div class="blog-title">Top HR career paths you can target after securing your PGDM degree</div>
+          <a href="#" class="blog-link" onclick="openLeadModal('Blog Link 3'); return false;">Read more →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-thumb">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=260&h=140"
+            alt="Placement Blog">
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">2 May 2026</div>
+          <div class="blog-title">How ABS students prepare and secure placement at leading recruiters</div>
+          <a href="#" class="blog-link" onclick="openLeadModal('Blog Link 4'); return false;">Read more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Process Steps -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">Admission Process</div>
+      <h2>Four steps to secure admission</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-title">Apply Online & Submit entrance scorecard</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-title">Initial shortlisting for Selection Rounds</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-title">Personal Interview & Document review</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-title">Selection Letter & Admission registration</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="block">
+    <div class="section-head">
+      <div class="section-eyebrow">FAQs</div>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q" onclick="toggleFaq(this)">What is PGDM in Human Resource Management? <span
+            class="faq-icon">+</span></div>
+        <div class="faq-a" style="max-height: 150px;">
+          <div class="faq-a-inner">
+            A specialized 2-year postgraduate program designed to build core competencies in strategic human capital
+            development, staffing, performance appraisal systems, HR Analytics, employee relations, and labour policies.
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What is the duration and structure of the program? <span
+            class="faq-icon">+</span></div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            It is a full-time, 2-year residential program divided into four semesters. The pedagogy comprises classroom
+            instruction, simulation exercises, live internships, and an international learning trip.
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What details are available for installment payments & loans? <span
+            class="faq-icon">+</span></div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            The base academic fee is ₹9.5 Lakhs. We offer flexible term payments and zero-cost EMI financing plans in
+            partnership with top student loan agencies starting at ₹18,500/month.
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Is this PGDM program valid and accredited? <span
+            class="faq-icon">+</span></div>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Yes. The program is fully approved by the AICTE, accredited by the NBA, and certified by the Association of
+            Indian Universities (AIU) as equivalent to an MBA degree.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Sticky CTA -->
+  <div class="sticky-cta">
+    <div class="left">Admissions open for 2026-28 batch — <b>apply before seats close</b></div>
+    <div class="actions">
+      <button class="btn-secondary" onclick="openLeadModal('Sticky Download Brochure')">Download Brochure</button>
+      <button class="btn-primary" onclick="openLeadModal('Sticky Apply Now')">Apply Now</button>
+    </div>
+  </div>
+
+  <!-- Global lead capture modal -->
+  <div class="modal-overlay" id="leadModal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeLeadModal()">×</button>
+      <div class="modal-header">
+        <h3>Asian Business School</h3>
+        <p id="modalSource">Application & Enquiry Form 2026</p>
+      </div>
+      <div class="modal-body" id="modalFormContainer">
+        <form id="leadCaptureForm" onsubmit="handleFormSubmit(event)">
+          <input type="hidden" id="formTriggerSource" name="triggerSource" value="General">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="emailAddr">Email Address</label>
+            <input type="email" id="emailAddr" class="form-control" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="mobileNo">Mobile Number</label>
+            <input type="tel" id="mobileNo" class="form-control" pattern="[0-9]{10}"
+              placeholder="Enter 10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label for="courseSelect">Program Course</label>
+            <select id="courseSelect" class="form-control" required>
+              <option value="PGDM-HRM" selected>PGDM in Human Resource Management (Equivalent to MBA)</option>
+              <option value="PGDM-General">PGDM - General</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="citySelect">State / City</label>
+            <input type="text" id="citySelect" class="form-control" placeholder="Enter your city/state" required>
+          </div>
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+      <!-- Success Screen Content -->
+      <div class="success-content" id="modalSuccessContainer">
+        <div class="success-icon">✓</div>
+        <h3>Enquiry Submitted!!</h3>
+        <p>Thank you for reaching out to Asian Business School. Our senior admissions counselor will contact you shortly
+          on your provided mobile number and email with the prospectus and fee schedule details.</p>
+        <button class="btn-primary" onclick="closeLeadModal()">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Asian Business School, Plot A2, Block A, Sector 125, Noida — 201303, Delhi NCR &nbsp;|&nbsp; <b>Layout preview
+      only</b> — Not affiliated content, for design review evaluation.
+  </footer>
+
+  <script>
+    // Toggle Hero Specializations Accordion
+    function toggleHeroAccordion(element) {
+      const item = element.parentElement;
+      const isActive = item.classList.contains('active');
+
+      // Collapse all accordion items
+      const allItems = document.querySelectorAll('.spec-item');
+      allItems.forEach(i => {
+        i.classList.remove('active');
+        i.querySelector('.spec-content').style.maxHeight = null;
+      });
+
+      // Expand clicked if it was not active
+      if (!isActive) {
+        item.classList.add('active');
+        const content = item.querySelector('.spec-content');
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    }
+
+    // Toggle FAQ Accordions
+    function toggleFaq(element) {
+      const item = element.parentElement;
+      const isActive = item.classList.contains('open');
+
+      // Collapse all FAQs
+      const allItems = document.querySelectorAll('.faq-item');
+      allItems.forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-a').style.maxHeight = null;
+      });
+
+      // Expand clicked if it was not active
+      if (!isActive) {
+        item.classList.add('open');
+        const content = item.querySelector('.faq-a');
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    }
+
+    // Carousel Scroll helper
+    function scrollCarousel(id, dir) {
+      const el = document.getElementById(id);
+      const step = el.clientWidth * 0.85;
+      el.scrollBy({ left: dir * step, behavior: 'smooth' });
+    }
+
+    // Lead Popup Modal management
+    const modalOverlay = document.getElementById('leadModal');
+    const modalFormContainer = document.getElementById('modalFormContainer');
+    const modalSuccessContainer = document.getElementById('modalSuccessContainer');
+    const formTriggerSource = document.getElementById('formTriggerSource');
+    const modalSourceLabel = document.getElementById('modalSource');
+
+    function openLeadModal(source) {
+      formTriggerSource.value = source;
+      modalSourceLabel.innerText = "Application Enquiry (" + source + ")";
+
+      // Reset form and screen states
+      document.getElementById('leadCaptureForm').reset();
+      modalFormContainer.style.display = 'block';
+      modalSuccessContainer.style.display = 'none';
+
+      // Activate overlay
+      modalOverlay.classList.add('active');
+    }
+
+    function closeLeadModal() {
+      modalOverlay.classList.remove('active');
+    }
+
+    // Close modal when clicking outside container
+    modalOverlay.addEventListener('click', function (e) {
+      if (e.target === modalOverlay) {
+        closeLeadModal();
+      }
+    });
+
+    // Form Submission Handler
+    function handleFormSubmit(event) {
+      event.preventDefault();
+
+      // Visual Feedback of Submission
+      const submitBtn = event.target.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerText;
+      submitBtn.innerText = 'Processing...';
+      submitBtn.disabled = true;
+
+      setTimeout(() => {
+        submitBtn.innerText = originalText;
+        submitBtn.disabled = false;
+
+        // Switch to success screen
+        modalFormContainer.style.display = 'none';
+        modalSuccessContainer.style.display = 'block';
+      }, 1000);
+    }
+
+    // Hero Form Submission Handler
+    function handleHeroFormSubmit(event) {
+      event.preventDefault();
+
+      const form = document.getElementById('heroLeadForm');
+      const successContainer = document.getElementById('heroFormSuccess');
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerText;
+
+      submitBtn.innerText = 'Processing...';
+      submitBtn.disabled = true;
+
+      setTimeout(() => {
+        submitBtn.innerText = originalText;
+        submitBtn.disabled = false;
+
+        // Hide form and show success state
+        form.style.display = 'none';
+        successContainer.style.display = 'block';
+      }, 1000);
+    }
+  </script>
 </body>
+
 </html>
