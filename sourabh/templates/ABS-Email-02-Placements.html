@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
   <meta name="color-scheme" content="light only">
   <meta name="supported-color-schemes" content="light">
   <!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <title>550+ Recruiters &amp; Dubai Offers | ABS Placements</title>
-  <style>:root { color-scheme: light only; }
-* { box-sizing: border-box; }
-body, table, td, p, a, div, span {
+  <style>body, table, td, p, a, div, span {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -20,6 +19,7 @@ body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: #1c1917;
 }
+table { border-collapse: collapse; }
 img {
   display: block;
   border: 0;
@@ -31,38 +31,46 @@ img {
 a { text-decoration: none; }
 .serif {
   font-family: "Fraunces", Georgia, "Times New Roman", serif;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
 }
 .mark {
-  background: linear-gradient(180deg, rgba(255,229,0,0) 54%, #ffe848 54%);
-  padding: 0 4px;
+  border-bottom: 2px solid #d97706;
+  padding-bottom: 1px;
   font-weight: 800;
-  color: #1a1612;
 }
 .mark-red {
-  background: linear-gradient(180deg, rgba(255,220,220,0) 56%, #ffd6d6 56%);
-  padding: 0 4px;
+  border-bottom: 2px solid #be0002;
+  padding-bottom: 1px;
   font-weight: 800;
-  color: #9e0008;
 }
 .shimmer-bar {
   height: 4px;
-  background: linear-gradient(90deg, #be0002 0%, #f59e0b 50%, #be0002 100%);
-  background-size: 200% 100%;
+  background-color: #be0002;
 }
-.card-lift {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.card-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 26px rgba(155, 22, 22, 0.14) !important;
-}
-.cta-pill {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.cta-pill:hover {
-  transform: translateY(-2px) scale(1.02);
-}
+@media only screen and (max-width: 620px) {
+  .wrap-pad { padding: 8px 6px !important; }
+  .shell { width: 100% !important; max-width: 100% !important; border-radius: 18px !important; }
+  .m-pad { padding: 14px 14px !important; }
+  .m-hero-pad { padding: 20px 16px !important; }
+  .stack { display: block !important; width: 100% !important; padding-left: 0 !important; padding-right: 0 !important; box-sizing: border-box !important; }
+  .stack-gap { display: block !important; width: 100% !important; height: 12px !important; line-height: 12px !important; }
+  .m-center { text-align: center !important; }
+  .m-full-btn { display: block !important; width: 100% !important; text-align: center !important; padding: 14px 16px !important; font-size: 16px !important; box-sizing: border-box !important; }
+  .h1-hero { font-size: 29px !important; line-height: 1.15 !important; }
+  .h1-mega { font-size: 36px !important; line-height: 1.08 !important; }
+  .mob-txt { font-size: 16px !important; line-height: 1.66 !important; }
+  .mob-sub { font-size: 14.5px !important; line-height: 1.56 !important; }
+  p { font-size: 16px !important; line-height: 1.66 !important; }
+  .ticket-left { border-right: 0 !important; border-bottom: 2px dashed #be0002 !important; }
+  .grid-img { height: auto !important; }
+  .accred-tr { display: block !important; width: 100% !important; text-align: center !important; }
+  .accred-cell { display: inline-block !important; width: 45% !important; margin: 4px 1.5% !important; vertical-align: top !important; }
+  .pill-wrap { white-space: normal !important; }
+}</style>
+  <style>.card-lift { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.card-lift:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(155, 22, 22, 0.14) !important; }
+.cta-pill { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.cta-pill:hover { transform: translateY(-2px) scale(1.02); }
 @keyframes pulseRed {
   0%, 100% { box-shadow: 0 10px 22px rgba(190, 0, 2, 0.28), 0 0 0 0 rgba(190, 0, 2, 0.42); }
   50% { box-shadow: 0 10px 22px rgba(190, 0, 2, 0.28), 0 0 0 12px rgba(190, 0, 2, 0); }
@@ -71,139 +79,142 @@ a { text-decoration: none; }
   0%, 100% { box-shadow: 0 10px 22px rgba(180, 130, 0, 0.26), 0 0 0 0 rgba(255, 229, 0, 0.55); }
   50% { box-shadow: 0 10px 22px rgba(180, 130, 0, 0.26), 0 0 0 11px rgba(255, 229, 0, 0); }
 }
-@keyframes floatGentle {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-5px); }
-}
-@keyframes shimmerMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
-}
-@keyframes ringExpand {
-  0% { transform: scale(0.5); opacity: 0.78; }
-  100% { transform: scale(1.48); opacity: 0; }
-}
-@keyframes dashDraw {
-  to { stroke-dashoffset: 0; }
-}
-@keyframes barFill {
-  0% { transform: scaleX(0.35); transform-origin: left center; }
-  100% { transform: scaleX(1); transform-origin: left center; }
-}
+@keyframes floatGentle { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
+@keyframes ringExpand { 0% { transform: scale(0.5); opacity: 0.78; } 100% { transform: scale(1.48); opacity: 0; } }
+@keyframes dashDraw { to { stroke-dashoffset: 0; } }
+@keyframes barFill { 0% { transform: scaleX(0.35); transform-origin: left center; } 100% { transform: scaleX(1); transform-origin: left center; } }
 @media (prefers-reduced-motion: no-preference) {
   .cta-pulse { animation: pulseRed 2.4s ease-in-out infinite; }
   .cta-pulse-gold { animation: pulseGold 2.4s ease-in-out infinite; }
   .float-bob { animation: floatGentle 3.2s ease-in-out infinite; }
-  .shimmer-bar { animation: shimmerMove 4s linear infinite; }
   .svg-ring { transform-origin: center; animation: ringExpand 3s ease-out infinite; }
   .svg-ring-2 { animation-delay: 1s; }
   .svg-ring-3 { animation-delay: 2s; }
   .svg-draw { stroke-dasharray: 850; stroke-dashoffset: 850; animation: dashDraw 2.5s 0.2s ease-out forwards; }
   .bar-anim { animation: barFill 1.5s ease-out both; }
 }
-@media only screen and (max-width: 620px) {
-  .wrap-pad { padding: 10px 8px !important; }
-  .shell { border-radius: 20px !important; }
-  .m-pad { padding: 20px 16px !important; }
-  .m-hero-pad { padding: 24px 16px !important; }
-  .stack { display: block !important; width: 100% !important; padding-left: 0 !important; padding-right: 0 !important; }
-  .stack-gap { display: block !important; width: 100% !important; height: 12px !important; line-height: 12px !important; }
-  .m-center { text-align: center !important; }
-  .m-full-btn { display: block !important; width: 100% !important; text-align: center !important; }
-  .h1-hero { font-size: 28px !important; line-height: 1.15 !important; }
-  .h1-mega { font-size: 38px !important; line-height: 1.06 !important; }
-  .ticket-left { border-right: 0 !important; border-bottom: 2px dashed #be0002 !important; }
-  .grid-img { height: auto !important; }
-  .accred-tr { display: block !important; width: 100% !important; text-align: center !important; }
-  .accred-cell { display: inline-block !important; width: 46% !important; margin: 4px 1.5% !important; vertical-align: top !important; }
-  .m-full-btn { padding: 14px 18px !important; font-size: 14px !important; }
-}
 @media (prefers-reduced-motion: reduce) {
-  * { animation: none !important; transition: none !important; stroke-dashoffset: 0 !important; }
+  .cta-pulse, .cta-pulse-gold, .float-bob, .svg-ring, .svg-draw, .bar-anim { animation: none !important; transition: none !important; stroke-dashoffset: 0 !important; }
 }</style>
 </head>
 <!-- PSYCHOLOGY: Social Proof & ROI | Theme: abs_red -->
-<body style="margin:0;padding:0;background-color:#fff5f5;color:#1c1917;">
+<body bgcolor="#fff5f5" style="margin:0;padding:0;background-color:#fff5f5;color:#1c1917;">
   <div style="display:none;max-height:0;overflow:hidden;font-size:1px;line-height:1px;color:#fff5f5;">Rs. 36.64 LPA highest offer, Rs. 8.03 LPA average CTC, KPMG/EY/ITC/Amul/HDFC recruiters. &#847; &#847; &#847; &#847; &#847;</div>
-  <table class="bg" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(180deg,#fff2f2 0%,#ffffff 65%,#ffe8e8 100%);background-color:#fff5f5;">
+  <table class="bg" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#fff5f5" style="background-color:#fff5f5;">
     <tr>
       <td align="center" class="wrap-pad" style="padding:20px 12px 28px;">
         <!--[if mso]><table width="640" align="center" role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
-        <table class="shell" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;background-color:#ffffff;border:1.5px solid #f2bcbc;border-radius:24px;box-shadow:0 16px 36px rgba(190,0,2,0.09);overflow:hidden;">
+        <table class="shell" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;background-color:#ffffff;border:1.5px solid #f2bcbc;border-radius:24px;overflow:hidden;">
           <tr>
-            <td style="background:linear-gradient(90deg,#ffffff 0%,#fff4f4 100%);background-color:#ffffff;border-bottom:2px solid #be0002;padding:15px 24px;">
+            <td bgcolor="#ffffff" style="background-color:#ffffff;border-bottom:2px solid #be0002;padding:15px 24px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td valign="middle" width="52%">
-                    <a href="https://abs.edu.in" target="_blank">
-                      <img src="https://admissions.abs.edu.in/pgdm/assets/images/logo.webp" alt="Asian Business School" width="142" style="width:142px;max-width:100%;height:auto;background:#ffffff;border-radius:6px;">
+                  <td valign="middle" width="54%">
+                    <a href="https://abs.edu.in" target="_blank" style="text-decoration:none;">
+                      <table role="presentation" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="background-color:#ffffff;">
+                        <tr>
+                          <td valign="middle" bgcolor="#ffffff" style="background-color:#ffffff;padding-right:8px;">
+                            <img src="https://abs.edu.in/ABS/ABS-LOGO-CROPPED.png" alt="ABS" width="68" style="width:68px;height:auto;display:block;background-color:#ffffff;">
+                          </td>
+                          <td valign="middle" bgcolor="#ffffff" style="background-color:#ffffff;border-left:1.5px solid #e5d8c0;padding-left:8px;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.18;font-weight:900;letter-spacing:0.6px;color:#1c1917;">
+                            ASIAN<br>BUSINESS<br>SCHOOL
+                          </td>
+                        </tr>
+                      </table>
                     </a>
                   </td>
-                  <td valign="middle" align="right" width="48%">
-                    <span style="display:inline-block;padding:6px 12px;border-radius:999px;background-color:#be0002;color:#ffffff;border:1px solid #be0002;font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;white-space:nowrap;">PLACEMENTS 36.64L</span>
+                  <td valign="middle" align="right" width="46%">
+                    <span class="pill-wrap" style="display:inline-block;padding:6px 12px;border-radius:999px;background-color:#be0002;color:#ffffff;border:1px solid #be0002;font-size:10px;font-weight:800;letter-spacing:0.8px;text-transform:uppercase;">PLACEMENTS 36.64L</span>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
-          <tr><td class="shimmer-bar"></td></tr>
+          <tr><td bgcolor="#be0002" class="shimmer-bar"></td></tr>
           <tr>
-      <td class="m-hero-pad" style="background:linear-gradient(135deg,#d6000c 0%,#a80008 65%,#8d0006 100%);background-color:#be0002;padding:30px 28px 28px;">
-        <div style="margin-bottom:12px;"><span style="display:inline-block;padding:6px 13px;border-radius:999px;background-color:#ffffff;color:#be0002;border:1px solid #ffffff;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;">CAREERS &bull; PLACEMENTS AT ABS</span></div>
+      <td class="m-hero-pad" bgcolor="#be0002" style="background-color:#be0002;padding:30px 28px 28px;">
+        <div style="margin-bottom:12px;"><span class="pill-wrap" style="display:inline-block;padding:6px 13px;border-radius:999px;background-color:#ffffff;color:#be0002;border:1px solid #ffffff;font-size:11px;font-weight:800;letter-spacing:0.9px;text-transform:uppercase;">CAREERS &bull; PLACEMENTS AT ABS</span></div>
         <h1 class="serif h1-mega" style="margin:0;color:#ffffff;font-size:44px;line-height:1.12;font-weight:900;">&#8377;36.64 LPA Highest Offer</h1>
-        <p style="margin:12px 0 0;color:#fff0f0;font-size:15px;line-height:1.65;font-weight:500;">Sourabh, one headline salary is a story. 550+ recruiters, 1,859+ placed students &amp; 2,100+ offers are a repeatable system.</p>
+        <p class="mob-txt" style="margin:12px 0 0;color:#ffffff;font-size:15.5px;line-height:1.65;font-weight:500;">Sourabh, one headline salary is a story. 550+ recruiters, 1,859+ placed students &amp; 2,100+ offers are a repeatable system.</p>
         
-    <div style="margin-top:16px;background-color:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.34);border-radius:16px;padding:12px 14px 4px;">
-      <svg viewBox="0 0 540 155" width="100%" style="display:block;" aria-label="Placement trajectory from Classroom to Offer">
-        <path class="svg-draw" d="M24 130 C130 128 180 96 265 86 S405 46 512 18" fill="none" stroke="#ffe548" stroke-width="4" stroke-linecap="round"/>
-        <circle cx="24" cy="130" r="7" fill="#ffffff"/>
-        <circle cx="265" cy="86" r="7" fill="#ffffff"/>
-        <circle class="svg-ring" cx="512" cy="18" r="14" fill="none" stroke="#ffe548" stroke-width="2.5"/>
-        <circle cx="512" cy="18" r="8" fill="#ffe548"/>
-        <text x="16" y="148" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial">Classroom + CRC</text>
-        <text x="220" y="114" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial">Summer Internship</text>
-        <text x="440" y="60" fill="#ffe548" font-size="11" font-weight="bold" font-family="Arial">Global Offer</text>
-      </svg>
-    </div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#9e0008" style="margin-top:16px;background-color:#9e0008;border:1px solid #f4b6b6;border-radius:14px;">
+      <tr>
+        <td style="padding:14px 12px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td class="stack" width="32%" align="center" valign="top" style="padding:4px 6px;">
+                <div style="display:inline-block;padding:4px 10px;border-radius:999px;background-color:#ffffff;color:#be0002;font-size:10.5px;font-weight:900;">STEP 1</div>
+                <div style="margin-top:6px;font-size:13px;font-weight:800;color:#ffffff;">Classroom + CRC</div>
+                <div style="font-size:11.5px;color:#ffe5e5;margin-top:2px;">Aptitude &amp; Mock Panels</div>
+              </td>
+              <td class="stack-gap" width="2%" style="font-size:0;line-height:0;">&nbsp;</td>
+              <td class="stack" width="32%" align="center" valign="top" style="padding:4px 6px;">
+                <div style="display:inline-block;padding:4px 10px;border-radius:999px;background-color:#ffffff;color:#be0002;font-size:10.5px;font-weight:900;">STEP 2</div>
+                <div style="margin-top:6px;font-size:13px;font-weight:800;color:#ffffff;">Summer Internship</div>
+                <div style="font-size:11.5px;color:#ffe5e5;margin-top:2px;">Mandatory Live Exposure</div>
+              </td>
+              <td class="stack-gap" width="2%" style="font-size:0;line-height:0;">&nbsp;</td>
+              <td class="stack" width="32%" align="center" valign="top" style="padding:4px 6px;">
+                <div style="display:inline-block;padding:4px 10px;border-radius:999px;background-color:#ffe500;color:#1c1917;font-size:10.5px;font-weight:900;">OUTCOME</div>
+                <div style="margin-top:6px;font-size:13px;font-weight:800;color:#ffe500;">Global Offer</div>
+                <div style="font-size:11.5px;color:#ffffff;margin-top:2px;">Up to &#8377;36.64 LPA</div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
     
       </td>
     </tr>
     <tr>
-      <td style="height:6px;background:linear-gradient(90deg,#ffffff 0%,#ffe5e5 50%,#be0002 100%);font-size:0;line-height:0;">&nbsp;</td>
+      <td bgcolor="#f2bcbc" style="height:4px;background-color:#f2bcbc;font-size:0;line-height:0;">&nbsp;</td>
     </tr><tr>
       <td class="m-pad" style="padding:12px 28px;">
-        <div style="background-color:#fbf8f1;border:1px solid #ece1c6;border-radius:16px;padding:16px 16px 8px;">
-          <div style="margin-bottom:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:#be0002;margin-bottom:4px;">PROMINENT RECRUITING PARTNERS</div><h2 class="serif" style="margin:0;font-size:23px;line-height:1.22;color:#1c1917;font-weight:900;"><span style="margin-right:8px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#be0002" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 13h20"/></svg></span>Top Brands Hiring From Asian Business School</h2></div>
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;"><tr><td width="23.5%" align="center" valign="middle" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://admissions.abs.edu.in/pgdm/assets/images/org/kpmg.webp" alt="KPMG" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background:#ffffff;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://admissions.abs.edu.in/pgdm/assets/images/org/ey.webp" alt="EY" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background:#ffffff;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://admissions.abs.edu.in/pgdm/assets/images/org/hdfc.png" alt="HDFC Bank" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background:#ffffff;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://admissions.abs.edu.in/pgdm/assets/images/org/itc.webp" alt="ITC Limited" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background:#ffffff;"></td></tr></table><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;"><tr><td width="23.5%" align="center" valign="middle" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://abs.edu.in/backend/static/uploads/dc7578cd-8a4b-497d-9278-6698a4e33508-1735896985642.png" alt="Amul" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background:#ffffff;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://abs.edu.in/backend/static/uploads/7df9d337-f790-42b9-b38a-67b5be46ac83-1735897841832.png" alt="Britannia" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background:#ffffff;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://abs.edu.in/backend/static/uploads/783e06b2-1124-4568-bdcf-788094622440-1735897856804.png" alt="Marico" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background:#ffffff;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://abs.edu.in/backend/static/uploads/b4ff4974-3b3a-4708-a1c7-d2b5bb363074-1740490291405.png" alt="Dabur" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background:#ffffff;"></td></tr></table>
-        </div>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#fbf8f1" style="background-color:#fbf8f1;border:1px solid #ece1c6;border-radius:16px;">
+          <tr>
+            <td style="padding:16px 16px 8px;">
+              <div style="margin-bottom:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:#be0002;margin-bottom:4px;">PROMINENT RECRUITING PARTNERS</div><h2 class="serif" style="margin:0;font-size:23px;line-height:1.22;color:#1c1917;font-weight:900;"><span style="margin-right:8px;"><span style="color:#be0002;font-size:17px;font-weight:800;line-height:1;vertical-align:middle;">&#9670;</span></span>Top Brands Hiring From Asian Business School</h2></div>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;"><tr><td width="23.5%" align="center" valign="middle" bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://admissions.abs.edu.in/pgdm/assets/images/org/kpmg.webp" alt="KPMG" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background-color:#ffffff;border-radius:4px;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://admissions.abs.edu.in/pgdm/assets/images/org/ey.webp" alt="EY" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background-color:#ffffff;border-radius:4px;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://admissions.abs.edu.in/pgdm/assets/images/org/hdfc.png" alt="HDFC Bank" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background-color:#ffffff;border-radius:4px;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://admissions.abs.edu.in/pgdm/assets/images/org/itc.webp" alt="ITC Limited" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background-color:#ffffff;border-radius:4px;"></td></tr></table><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:8px;"><tr><td width="23.5%" align="center" valign="middle" bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://abs.edu.in/backend/static/uploads/dc7578cd-8a4b-497d-9278-6698a4e33508-1735896985642.png" alt="Amul" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background-color:#ffffff;border-radius:4px;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://abs.edu.in/backend/static/uploads/7df9d337-f790-42b9-b38a-67b5be46ac83-1735897841832.png" alt="Britannia" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background-color:#ffffff;border-radius:4px;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://abs.edu.in/backend/static/uploads/783e06b2-1124-4568-bdcf-788094622440-1735897856804.png" alt="Marico" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background-color:#ffffff;border-radius:4px;"></td><td width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td width="23.5%" align="center" valign="middle" bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #eadfbf;border-radius:10px;padding:10px 6px;"><img src="https://abs.edu.in/backend/static/uploads/b4ff4974-3b3a-4708-a1c7-d2b5bb363074-1740490291405.png" alt="Dabur" height="32" style="height:32px;width:auto;max-width:100%;margin:0 auto;background-color:#ffffff;border-radius:4px;"></td></tr></table>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr><tr>
       <td class="m-pad" style="padding:12px 28px 8px;">
-        <div style="margin-bottom:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:#be0002;margin-bottom:4px;">VERIFIED SUCCESS STORIES</div><h2 class="serif" style="margin:0;font-size:23px;line-height:1.22;color:#1c1917;font-weight:900;"><span style="margin-right:8px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#be0002" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></span>Recent Dubai &amp; National Offer Holders</h2></div>
+        <div style="margin-bottom:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:#be0002;margin-bottom:4px;">VERIFIED SUCCESS STORIES</div><h2 class="serif" style="margin:0;font-size:23px;line-height:1.22;color:#1c1917;font-weight:900;"><span style="margin-right:8px;"><span style="color:#be0002;font-size:17px;font-weight:800;line-height:1;vertical-align:middle;">&#9733;</span></span>Recent Dubai &amp; National Offer Holders</h2></div>
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr><td class="stack" width="32%" valign="top"><div class="card-lift" style="border-radius:14px;overflow:hidden;border:1px solid #ece0c2;background-color:#ffffff;"><img src="https://admissions.abs.edu.in/pgdm/img/dhruv-dhanguard.jpg" alt="Dhruv Placed at Dhanguard Dubai 15.43 LPA" width="186" class="" style="width:100%;height:auto;display:block;"><div style="padding:10px 10px 12px;"><div style="font-size:13px;font-weight:800;color:#1c1917;line-height:1.25;">Dhruv &bull; Dhanguard Dubai</div><div style="font-size:11px;color:#57534e;margin-top:3px;line-height:1.4;">Rs. 15.43 LPA (4 Students)</div></div></div></td><td class="stack-gap" width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td class="stack" width="32%" valign="top"><div class="card-lift" style="border-radius:14px;overflow:hidden;border:1px solid #ece0c2;background-color:#ffffff;"><img src="https://admissions.abs.edu.in/pgdm/img/roshni-oro.jpg" alt="Roshni Placed at ORO Developments Dubai 14.71 LPA" width="186" class="" style="width:100%;height:auto;display:block;"><div style="padding:10px 10px 12px;"><div style="font-size:13px;font-weight:800;color:#1c1917;line-height:1.25;">Roshni &bull; ORO Dubai</div><div style="font-size:11px;color:#57534e;margin-top:3px;line-height:1.4;">Rs. 14.71 LPA (International)</div></div></div></td><td class="stack-gap" width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td class="stack" width="32%" valign="top"><div class="card-lift" style="border-radius:14px;overflow:hidden;border:1px solid #ece0c2;background-color:#ffffff;"><img src="https://abs.edu.in/backend/static/uploads/e368d9db-5b86-4d1a-a158-bf6284afd29b-1765888677754.jpg" alt="Ashish Jaro Education 13.96 LPA" width="186" class="" style="width:100%;height:auto;display:block;"><div style="padding:10px 10px 12px;"><div style="font-size:13px;font-weight:800;color:#1c1917;line-height:1.25;">Ashish &bull; Jaro Education</div><div style="font-size:11px;color:#57534e;margin-top:3px;line-height:1.4;">Rs. 13.96 LPA (13+ Placed)</div></div></div></td></tr>
+          <tr><td class="stack" width="32%" valign="top"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" class="card-lift" style="border-radius:14px;overflow:hidden;border:1px solid #ece0c2;background-color:#ffffff;"><tr><td><img src="https://admissions.abs.edu.in/pgdm/img/dhruv-dhanguard.jpg" alt="Dhruv Placed at Dhanguard Dubai 15.43 LPA" width="186" class="" style="width:100%;height:auto;display:block;"></td></tr><tr><td style="padding:10px 10px 12px;"><div style="font-size:14px;font-weight:800;color:#1c1917;line-height:1.25;">Dhruv &bull; Dhanguard Dubai</div><div class="mob-sub" style="font-size:12.5px;color:#57534e;margin-top:3px;line-height:1.45;">Rs. 15.43 LPA (4 Students)</div></td></tr></table></td><td class="stack-gap" width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td class="stack" width="32%" valign="top"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" class="card-lift" style="border-radius:14px;overflow:hidden;border:1px solid #ece0c2;background-color:#ffffff;"><tr><td><img src="https://admissions.abs.edu.in/pgdm/img/roshni-oro.jpg" alt="Roshni Placed at ORO Developments Dubai 14.71 LPA" width="186" class="" style="width:100%;height:auto;display:block;"></td></tr><tr><td style="padding:10px 10px 12px;"><div style="font-size:14px;font-weight:800;color:#1c1917;line-height:1.25;">Roshni &bull; ORO Dubai</div><div class="mob-sub" style="font-size:12.5px;color:#57534e;margin-top:3px;line-height:1.45;">Rs. 14.71 LPA (International)</div></td></tr></table></td><td class="stack-gap" width="2%" style="font-size:0;line-height:0;">&nbsp;</td><td class="stack" width="32%" valign="top"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" class="card-lift" style="border-radius:14px;overflow:hidden;border:1px solid #ece0c2;background-color:#ffffff;"><tr><td><img src="https://abs.edu.in/backend/static/uploads/e368d9db-5b86-4d1a-a158-bf6284afd29b-1765888677754.jpg" alt="Ashish Jaro Education 13.96 LPA" width="186" class="" style="width:100%;height:auto;display:block;"></td></tr><tr><td style="padding:10px 10px 12px;"><div style="font-size:14px;font-weight:800;color:#1c1917;line-height:1.25;">Ashish &bull; Jaro Education</div><div class="mob-sub" style="font-size:12.5px;color:#57534e;margin-top:3px;line-height:1.45;">Rs. 13.96 LPA (13+ Placed)</div></td></tr></table></td></tr>
         </table>
       </td>
     </tr><tr>
       <td class="m-pad" style="padding:12px 28px;">
-        <div style="background-color:#ffffff;border:1px solid #ece0c8;border-radius:16px;padding:18px 20px;">
-          <div style="margin-bottom:14px;"><div style="font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:#be0002;margin-bottom:4px;">VERIFIED ABS PLACEMENT METRICS</div><h2 class="serif" style="margin:0;font-size:23px;line-height:1.22;color:#1c1917;font-weight:900;"><span style="margin-right:8px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#be0002" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span>Consistently Strong Numbers Year After Year</h2></div>
-          <div style="margin-bottom:12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:4px;"><tr><td style="font-size:13px;font-weight:700;color:#292524;">Highest International Placement Offered</td><td align="right" style="font-size:13px;font-weight:900;color:#be0002;">&#8377;36.64 LPA</td></tr></table><div style="width:100%;height:10px;border-radius:999px;background-color:#f3ece1;overflow:hidden;"><div class="bar-anim" style="width:98%;height:10px;border-radius:999px;background-color:#be0002;"></div></div></div><div style="margin-bottom:12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:4px;"><tr><td style="font-size:13px;font-weight:700;color:#292524;">Domestic Highest Claimed Offer</td><td align="right" style="font-size:13px;font-weight:900;color:#dc2626;">&#8377;24.69 LPA</td></tr></table><div style="width:100%;height:10px;border-radius:999px;background-color:#f3ece1;overflow:hidden;"><div class="bar-anim" style="width:82%;height:10px;border-radius:999px;background-color:#dc2626;"></div></div></div><div style="margin-bottom:12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:4px;"><tr><td style="font-size:13px;font-weight:700;color:#292524;">Dubai Cohort Offers (Dhanguard &amp; ORO)</td><td align="right" style="font-size:13px;font-weight:900;color:#b91c1c;">&#8377;15.43 &ndash; 14.71 LPA</td></tr></table><div style="width:100%;height:10px;border-radius:999px;background-color:#f3ece1;overflow:hidden;"><div class="bar-anim" style="width:68%;height:10px;border-radius:999px;background-color:#b91c1c;"></div></div></div><div style="margin-bottom:12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:4px;"><tr><td style="font-size:13px;font-weight:700;color:#292524;">Batch Average CTC Across Specializations</td><td align="right" style="font-size:13px;font-weight:900;color:#0f7644;">&#8377;8.03 LPA</td></tr></table><div style="width:100%;height:10px;border-radius:999px;background-color:#f3ece1;overflow:hidden;"><div class="bar-anim" style="width:54%;height:10px;border-radius:999px;background-color:#0f7644;"></div></div></div>
-        </div>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="background-color:#ffffff;border:1px solid #ece0c8;border-radius:16px;">
+          <tr>
+            <td style="padding:18px 20px;">
+              <div style="margin-bottom:14px;"><div style="font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:#be0002;margin-bottom:4px;">VERIFIED ABS PLACEMENT METRICS</div><h2 class="serif" style="margin:0;font-size:23px;line-height:1.22;color:#1c1917;font-weight:900;"><span style="margin-right:8px;"><span style="color:#be0002;font-size:17px;font-weight:800;line-height:1;vertical-align:middle;">&#9672;</span></span>Consistently Strong Numbers Year After Year</h2></div>
+              <div style="margin-bottom:12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:4px;"><tr><td class="mob-sub" style="font-size:13.5px;font-weight:700;color:#292524;">Highest International Placement Offered</td><td align="right" class="mob-sub" style="font-size:13.5px;font-weight:900;color:#be0002;">&#8377;36.64 LPA</td></tr></table><div style="width:100%;height:10px;border-radius:999px;background-color:#ede4d3;overflow:hidden;"><div class="bar-anim" style="width:98%;height:10px;border-radius:999px;background-color:#be0002;"></div></div></div><div style="margin-bottom:12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:4px;"><tr><td class="mob-sub" style="font-size:13.5px;font-weight:700;color:#292524;">Domestic Highest Claimed Offer</td><td align="right" class="mob-sub" style="font-size:13.5px;font-weight:900;color:#dc2626;">&#8377;24.69 LPA</td></tr></table><div style="width:100%;height:10px;border-radius:999px;background-color:#ede4d3;overflow:hidden;"><div class="bar-anim" style="width:82%;height:10px;border-radius:999px;background-color:#dc2626;"></div></div></div><div style="margin-bottom:12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:4px;"><tr><td class="mob-sub" style="font-size:13.5px;font-weight:700;color:#292524;">Dubai Cohort Offers (Dhanguard &amp; ORO)</td><td align="right" class="mob-sub" style="font-size:13.5px;font-weight:900;color:#b91c1c;">&#8377;15.43 &ndash; 14.71 LPA</td></tr></table><div style="width:100%;height:10px;border-radius:999px;background-color:#ede4d3;overflow:hidden;"><div class="bar-anim" style="width:68%;height:10px;border-radius:999px;background-color:#b91c1c;"></div></div></div><div style="margin-bottom:12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:4px;"><tr><td class="mob-sub" style="font-size:13.5px;font-weight:700;color:#292524;">Batch Average CTC Across Specializations</td><td align="right" class="mob-sub" style="font-size:13.5px;font-weight:900;color:#0f7644;">&#8377;8.03 LPA</td></tr></table><div style="width:100%;height:10px;border-radius:999px;background-color:#ede4d3;overflow:hidden;"><div class="bar-anim" style="width:54%;height:10px;border-radius:999px;background-color:#0f7644;"></div></div></div>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr><tr>
       <td class="m-pad" style="padding:12px 28px 8px;">
         
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr><td class="stack" width="48.5%" valign="top"><div class="card-lift" style="border-radius:14px;overflow:hidden;border:1px solid #ece0c2;background-color:#ffffff;"><img src="https://admissions.abs.edu.in/pgdm/img/devesh-mygate.jpg" alt="Devesh Placed at MyGate 10 LPA" width="280" class="" style="width:100%;height:auto;display:block;"><div style="padding:10px 12px;background-color:#ffffff;font-size:12px;font-weight:700;color:#292524;border-top:1px solid #efe4cb;">Devesh &bull; MyGate (Rs. 10.00 LPA &middot; 7+ Placed)</div></div></td><td class="stack-gap" width="3%" style="font-size:0;line-height:0;">&nbsp;</td><td class="stack" width="48.5%" valign="top"><div class="card-lift" style="border-radius:14px;overflow:hidden;border:1px solid #ece0c2;background-color:#ffffff;"><img src="https://admissions.abs.edu.in/pgdm/img/mansi-ht.jpg" alt="Mansi Placed at HT Media 7.50 LPA" width="280" class="" style="width:100%;height:auto;display:block;"><div style="padding:10px 12px;background-color:#ffffff;font-size:12px;font-weight:700;color:#292524;border-top:1px solid #efe4cb;">Mansi &bull; HT Media (Rs. 7.50 LPA &middot; 5+ Placed)</div></div></td></tr>
+          <tr><td class="stack" width="48.5%" valign="top"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" class="card-lift" style="border-radius:14px;overflow:hidden;border:1px solid #ece0c2;background-color:#ffffff;"><tr><td><img src="https://admissions.abs.edu.in/pgdm/img/devesh-mygate.jpg" alt="Devesh Placed at MyGate 10 LPA" width="280" class="" style="width:100%;height:auto;display:block;"></td></tr><tr><td><div class="mob-sub" style="padding:10px 12px;background-color:#ffffff;font-size:13px;font-weight:700;color:#292524;border-top:1px solid #efe4cb;">Devesh &bull; MyGate (Rs. 10.00 LPA &middot; 7+ Placed)</div></td></tr></table></td><td class="stack-gap" width="3%" style="font-size:0;line-height:0;">&nbsp;</td><td class="stack" width="48.5%" valign="top"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" class="card-lift" style="border-radius:14px;overflow:hidden;border:1px solid #ece0c2;background-color:#ffffff;"><tr><td><img src="https://admissions.abs.edu.in/pgdm/img/mansi-ht.jpg" alt="Mansi Placed at HT Media 7.50 LPA" width="280" class="" style="width:100%;height:auto;display:block;"></td></tr><tr><td><div class="mob-sub" style="padding:10px 12px;background-color:#ffffff;font-size:13px;font-weight:700;color:#292524;border-top:1px solid #efe4cb;">Mansi &bull; HT Media (Rs. 7.50 LPA &middot; 5+ Placed)</div></td></tr></table></td></tr>
         </table>
       </td>
     </tr><tr>
       <td class="m-pad" style="padding:10px 28px 12px;">
-        <div style="background:linear-gradient(135deg,#fff3f3 0%,#ffffff 100%);background-color:#fff5f5;border-left:5px solid #be0002;border-radius:14px;padding:18px 20px;">
-          <p class="serif" style="margin:0;color:#9e0008;font-size:18.5px;line-height:1.38;font-weight:800;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#be0002" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 13h20"/></svg> &nbsp;Corporate Resource Cell: 1,859+ Placed &middot; 2,100+ Offers &middot; 550+ Recruiters</p>
-          <p style="margin:6px 0 0;font-size:13px;line-height:1.5;color:#4a3b3b;font-weight:500;">Every student tests their skills inside a mandatory Corporate Summer Internship with a public internship track record.</p>
-        </div>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#fff5f5" style="background-color:#fff5f5;border-left:5px solid #be0002;border-radius:14px;">
+          <tr>
+            <td style="padding:18px 20px;">
+              <p class="serif" style="margin:0;color:#9e0008;font-size:18.5px;line-height:1.38;font-weight:800;"><span style="color:#be0002;font-size:17px;font-weight:800;line-height:1;vertical-align:middle;">&#9670;</span> &nbsp;Corporate Resource Cell: 1,859+ Placed &middot; 2,100+ Offers &middot; 550+ Recruiters</p>
+              <p class="mob-sub" style="margin:6px 0 0;font-size:13.5px;line-height:1.55;color:#4a3b3b;font-weight:500;">Every student tests their skills inside a mandatory Corporate Summer Internship with a public internship track record.</p>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr><tr>
       <td align="center" class="m-pad" style="padding:14px 28px 24px;">
@@ -214,25 +225,25 @@ a { text-decoration: none; }
     </v:roundrect>
     <![endif]-->
     <!--[if !mso]><!-->
-    <a href="https://abs.edu.in/recruitment-partners" target="_blank" class="cta-pill cta-pulse m-full-btn" style="display:inline-block;background-color:#be0002;color:#ffffff;font-size:15px;font-weight:800;line-height:20px;padding:15px 34px;border-radius:999px;">Explore 550+ Recruitment Partners &rarr;</a>
+    <a href="https://abs.edu.in/recruitment-partners" target="_blank" class="cta-pill cta-pulse m-full-btn" style="display:inline-block;background-color:#be0002;color:#ffffff;font-size:15px;font-weight:800;line-height:20px;padding:15px 32px;border-radius:999px;">Explore 550+ Recruitment Partners &rarr;</a>
     <!--<![endif]-->
-        <p style="margin:14px 0 4px;font-size:13px;">
+        <p style="margin:14px 0 4px;font-size:13.5px;">
           <a href="https://apply.abs.edu.in/?msg=login&amp;type=otp" target="_blank" style="color:#be0002;font-weight:800;text-decoration:underline;">Start your 2027–29 PGDM application</a>
         </p>
-        <p style="margin:0;font-size:12px;color:#78716c;">100% online &middot; OTP access &middot; Official ABS portal</p>
+        <p class="mob-sub" style="margin:0;font-size:12.5px;color:#57534e;">100% online &middot; OTP access &middot; Official ABS portal</p>
       </td>
     </tr>
           <tr>
           <td class="m-pad" style="padding:8px 22px 22px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="overflow:hidden;border:2px solid #be0002;border-radius:18px;background-color:#ffffff;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="overflow:hidden;border:2px solid #be0002;border-radius:18px;background-color:#ffffff;">
               <tr>
-                <td style="padding:14px 18px;background:linear-gradient(135deg,#c9000b 0%,#990007 100%);background-color:#be0002;text-align:center;">
+                <td bgcolor="#be0002" style="padding:14px 18px;background-color:#be0002;text-align:center;">
                   <div style="font-size:12px;font-weight:800;letter-spacing:0.8px;color:#ffe55c;text-transform:uppercase;">ASIAN BUSINESS SCHOOL &bull; SECTOR 125, NOIDA</div>
                   <div style="margin-top:4px;font-size:14px;font-weight:800;color:#ffffff;">Admissions Open 2027&ndash;29 &bull; AICTE Approved &amp; AIU MBA-Equivalent</div>
                 </td>
               </tr>
               <tr>
-                <td style="padding:11px 16px;background-color:#fff5f5;border-bottom:1px solid #f4d2d2;text-align:center;font-size:12px;color:#7f1d1d;font-weight:700;">
+                <td bgcolor="#fff5f5" style="padding:11px 16px;background-color:#fff5f5;border-bottom:1px solid #f4d2d2;text-align:center;font-size:12.5px;color:#7f1d1d;font-weight:700;">
                   Separate Boys &amp; Girls Hostel (near institute) &nbsp;&middot;&nbsp; Education Loan: Punjab National Bank (PNB) + State Credit Cards
                 </td>
               </tr>
@@ -241,33 +252,55 @@ a { text-decoration: none; }
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td class="stack" width="35%" valign="top" style="padding-right:10px;">
-                        <div style="font-size:10px;font-weight:900;letter-spacing:1.4px;text-transform:uppercase;color:#be0002;">CAMPUS</div>
-                        <div style="margin-top:5px;font-size:12px;line-height:1.55;color:#292524;">Plot A2, Block A,<br>Sector 125, Noida 201303,<br>Delhi NCR, India</div>
+                        <div style="font-size:10.5px;font-weight:900;letter-spacing:1.4px;text-transform:uppercase;color:#be0002;">CAMPUS</div>
+                        <div class="mob-sub" style="margin-top:5px;font-size:12.5px;line-height:1.55;color:#292524;">Plot A2, Block A,<br>Sector 125, Noida 201303,<br>Delhi NCR, India</div>
                       </td>
                       <td class="stack-gap" width="2%" style="font-size:0;line-height:0;">&nbsp;</td>
                       <td class="stack" width="39%" valign="top" style="padding-right:10px;">
-                        <div style="font-size:10px;font-weight:900;letter-spacing:1.4px;text-transform:uppercase;color:#be0002;">CONNECT</div>
-                        <div style="margin-top:5px;font-size:12px;line-height:1.6;color:#292524;">
-                          Call: <a href="tel:+919650334486" style="color:#be0002;font-weight:800;">+91 96503 34486</a><br>
-                          WhatsApp: <a href="https://wa.me/918376025740" target="_blank" style="color:#0f7644;font-weight:800;">+91 83760 25740</a><br>
-                          Email: <a href="mailto:info@abs.edu.in" style="color:#292524;font-weight:600;">info@abs.edu.in</a>
-                        </div>
+                        <div style="font-size:10.5px;font-weight:900;letter-spacing:1.4px;text-transform:uppercase;color:#be0002;">CONTACT ABS</div>
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;">
+      <tr>
+        <td width="24" valign="middle" style="padding:2px 0;">
+          <span style="display:inline-block;width:20px;height:20px;line-height:20px;text-align:center;border-radius:10px;background-color:#be0002;color:#ffffff;font-size:11px;font-weight:900;">&#9742;&#xfe0e;</span>
+        </td>
+        <td valign="middle" class="mob-sub" style="padding:2px 0 2px 4px;font-size:12.5px;line-height:1.45;">
+          <a href="tel:+919650334486" style="color:#be0002;font-weight:800;">+91 96503 34486</a>
+        </td>
+      </tr>
+      <tr>
+        <td width="24" valign="middle" style="padding:3px 0;">
+          <span style="display:inline-block;width:20px;height:20px;line-height:20px;text-align:center;border-radius:10px 10px 10px 2px;background-color:#16a34a;color:#ffffff;font-size:11px;font-weight:900;">&#9990;&#xfe0e;</span>
+        </td>
+        <td valign="middle" class="mob-sub" style="padding:3px 0 3px 4px;font-size:12.5px;line-height:1.45;">
+          <a href="https://wa.me/918376025740" target="_blank" style="color:#0f7644;font-weight:800;">+91 83760 25740</a>
+        </td>
+      </tr>
+      <tr>
+        <td width="24" valign="middle" style="padding:2px 0;">
+          <span style="display:inline-block;width:20px;height:20px;line-height:20px;text-align:center;border-radius:10px;background-color:#292524;color:#ffffff;font-size:11px;font-weight:900;">&#9993;&#xfe0e;</span>
+        </td>
+        <td valign="middle" class="mob-sub" style="padding:2px 0 2px 4px;font-size:12.5px;line-height:1.45;">
+          <a href="mailto:info@abs.edu.in" style="color:#292524;font-weight:700;">info@abs.edu.in</a>
+        </td>
+      </tr>
+    </table>
                       </td>
                       <td class="stack-gap" width="2%" style="font-size:0;line-height:0;">&nbsp;</td>
                       <td class="stack m-center" width="22%" align="center" valign="middle">
-                        <a href="https://apply.abs.edu.in/" target="_blank" style="display:inline-block;padding:11px 16px;border-radius:999px;background-color:#be0002;color:#ffffff;font-size:12.5px;font-weight:800;white-space:nowrap;">Apply Now</a>
+                        <a href="https://apply.abs.edu.in/" target="_blank" style="display:inline-block;padding:11px 16px;border-radius:999px;background-color:#be0002;color:#ffffff;font-size:13px;font-weight:800;">Apply Now</a>
                       </td>
                     </tr>
                   </table>
                 </td>
               </tr>
               <tr>
-                <td style="border-top:1px solid #f4d6d6;background-color:#fff9f9;padding:10px 14px;text-align:center;font-size:11px;line-height:1.7;color:#57534e;">
+                <td bgcolor="#fff9f9" style="border-top:1px solid #f4d6d6;background-color:#fff9f9;padding:10px 14px;text-align:center;font-size:12px;line-height:1.7;color:#57534e;">
                   <a href="https://abs.edu.in" target="_blank" style="color:#be0002;font-weight:700;">abs.edu.in</a> &middot;
                   <a href="https://apply.abs.edu.in/" target="_blank" style="color:#be0002;font-weight:700;">Admissions Portal</a> &middot;
                   <a href="https://www.facebook.com/AsianBusinessSchool/" target="_blank" style="color:#57534e;">Facebook</a> &middot;
                   <a href="https://www.instagram.com/asianbusinessschool/" target="_blank" style="color:#57534e;">Instagram</a> &middot;
                   <a href="https://www.youtube.com/user/absnoidatv/videos" target="_blank" style="color:#57534e;">YouTube</a> &middot;
+                  <a href="https://abs.edu.in/privacy-policy" target="_blank" style="color:#57534e;text-decoration:underline;">Privacy Policy</a> &middot;
                   <a href="{{unsubscribe}}" style="color:#57534e;text-decoration:underline;">Unsubscribe</a>
                 </td>
               </tr>
